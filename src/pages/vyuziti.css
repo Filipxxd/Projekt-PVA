@@ -1,0 +1,45 @@
+.box{
+    width: 100vw;
+}
+.box *{
+    margin: auto;
+}
+
+.box header{
+    width: 100vw;
+    background-color: #E9ECEF;
+}
+.box h1{
+    text-align: left;
+    padding: 5rem 2rem;
+    font-size: 3.5rem;
+}
+.box h2{
+    margin: 1rem 0;
+}
+.box main {
+    width: 100%;
+    display: flex;
+}
+.box section{
+    padding: 1rem;
+}
+.box p{
+    font-size: 1.1rem;
+}
+@media screen and (min-width: 781px){
+    .box h1{
+        width: 90vw;
+    }
+    .box main{
+        width: 90%;
+    }
+    .box section{
+        margin: 1rem;
+    }
+}
+@media screen and (max-width: 780px){
+    .box main{
+        flex-direction: column;
+    } 
+}

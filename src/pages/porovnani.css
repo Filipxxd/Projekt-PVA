@@ -1,0 +1,45 @@
+.wrapper {
+  height: 90vh;
+  position: relative;
+}
+.wrapper a {
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(.7);
+  -webkit-filter: grayscale(.7);
+}
+.wrapper a:hover {
+  filter: grayscale(0.4);
+  -webkit-filter: grayscale(.4);
+}
+.samec,
+.samice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.wrapper .samec {
+  background: url("../img/first.jpeg") center/cover;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.wrapper .samice {
+  background: url("../img/second.jpeg") center/cover;
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+}
+.samecText,
+.samiceText {
+  position: absolute;
+  font-size: 5rem;
+}
+.samecText {
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.samiceText {
+  bottom: 30%;
+  right: 30%;
+  transform: translate(50%, 50%);
+}

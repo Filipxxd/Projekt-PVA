@@ -1,0 +1,24 @@
+.footer {
+  background-color: #E9ECEF;
+  width: 100vw;
+  display: flex;
+  flex: 1 0 auto;
+}
+.mapa{
+  width: 10vw;
+  height: 10vw;
+  border: none;
+}
+@media screen and (min-width: 1000px) {
+  .footer {
+    position: absolute;
+    bottom: -20vh;
+  }
+  .mapa{
+    width: 20vw;
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 1000px){
+
+}
