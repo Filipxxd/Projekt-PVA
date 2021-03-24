@@ -17,7 +17,7 @@
 .logo {
     width: 4rem;
     margin: .5rem;
-    position: sticky;
+    position: sticky !important;
     cursor: pointer;
     z-index: 4;
 }
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 780px) {
   .navig{
-    position: sticky;
+    position: sticky !important;
     position: -webkit-sticky;
     top: 0;
     width: 100vw;
@@ -43,7 +43,7 @@
   visibility: visible;
   font-size: 3rem;
   margin: 0 1rem;
-  position: sticky;
+  position: sticky !important;
   cursor: pointer;
   z-index: 3;
 
