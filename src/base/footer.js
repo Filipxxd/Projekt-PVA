@@ -11,8 +11,10 @@ export default function footer() {
                     <span><a href="/"><FaFacebook className="FIco" />FakeFacebook</a></span>
                     <span><a href="/"><FaInstagram className="FIco" />FakeIG</a></span>
                 </div>
-                <div className="Place"><h2>Kontakt a sidlo</h2>
+                <div className="Place"><h2>Kontakt</h2>
                     <p>Zahrádka 6, 262 55 Petrovice</p>
+                    <p>Tel: +420 666 666 666</p>
+                    <p>attoroste@gmail.com</p>
                 </div> 
             </div>
 

@@ -42,4 +42,10 @@
     .box main{
         flex-direction: column;
     } 
+    .box p{
+        width: 95%;
+    }
+    .box section:last-of-type{
+        padding-bottom: 5rem;
+    }
 }

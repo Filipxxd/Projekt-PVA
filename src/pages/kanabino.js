@@ -1,46 +1,41 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./vyuziti.js";
 
 export default function Header() {
   return (
-    <>
-      <header className="jumbotron">
-        <div className="container">
-          <h1 className="display-3">Kanabinoidy</h1>
-          <p>látky vysktyující se ve všem živém</p>
-        </div>
+    <div className="box">
+      <header>
+        <h1>Kanabinoidy</h1>
       </header>
-      <main className="container">
-        <main className="row">
-          <secion className="col-md-4">
-            <h2>Heading</h2>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.{" "}
-            </p>
-            <p>
-              {/* <a className="btn btn-secondary" href="#" role="button">
-                View details &raquo;
-              </a> */}
-            </p>
-          </secion>
-          <section className="col-md-4">
-            <h2>Heading</h2>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-              fermentum massa justo sit amet risus. Etiam porta sem malesuada
-              magna mollis euismod. Donec sed odio dui.{" "}
-            </p>
-            <p>
-              {/* <a className="btn btn-secondary" href="#" role="button">
-                View details &raquo;
-              </a> */}
-            </p>
-          </section>
-        </main>
+      <main>
+        <section>
+          <h2>CBD</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
+            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
+            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
+            magnam? Ipsam, sit dicta!
+          </p>
+        </section>
+        <section>
+          <h2>CBG</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
+            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
+            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
+            magnam? Ipsam, sit dicta!
+          </p>
+        </section>
+        <section>
+          <h2>CBN</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
+            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
+            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
+            magnam? Ipsam, sit dicta!
+          </p>
+        </section>
       </main>
-    </>
-  )}
+    </div>
+  )
+}

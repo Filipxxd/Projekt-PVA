@@ -1,3 +1,4 @@
+import Helmet from "./base/helmet.js"
 import Nav from "./base/nav";
 import Footer from "./base/footer.js";
 import Home from "./pages/home.js";
@@ -11,6 +12,12 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <>
+    <Helmet>
+    <head>
+      <title>XD</title>
+    </head>
+    
+    </Helmet>
     <Router className="all">
       <Nav />
       <Switch>

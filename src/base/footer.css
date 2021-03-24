@@ -1,52 +1,61 @@
 .footer {
-  background-color: #E9ECEF;
+  background-color: #e9ecef;
   width: 100%;
-  flex: 1 0 auto;
+
 }
-.wrapfooter{
+.wrapfooter {
   display: flex;
 }
-.Links, .Place{
+.Links,
+.Place {
   width: 50%;
 }
-.Author{
+.Author {
   text-align: center;
 }
 
-.footer h2{
-  margin: 1rem 1rem;
-}
-.footer a{
+.footer a {
   display: block;
   font-size: 1.4rem;
-  margin: .5rem 2rem;
 }
-.FIco{
+.FIco {
   position: relative;
-  top: -.15rem;
-  margin: .1rem;
+  top: -0.15rem;
+  margin: 0.1rem;
 }
-.footer h3{
-  padding: 1rem;
-}
+
 @media screen and (min-width: 1000px) {
   .footer {
     position: absolute;
-    min-height: 35vh;
-    bottom: -35vh;
+    min-height: 37vh;
+    bottom: -37vh;
   }
-
+  .footer h3 {
+    padding: 1rem;
+  }
+  .footer h2 {
+    margin: 1rem;
+  }
+  .footer a{
+    margin: 0.5rem 2rem;
+  }
 }
-@media screen and (max-width: 1000px){
-  .wrapfooter{
+@media screen and (max-width: 1000px) {
+  .wrapfooter {
     display: flex;
   }
-  .Links, .Place{
+  .Links,
+  .Place {
     width: 100%;
   }
-  .Author, .wrapfooter{
+  .Author,
+  .wrapfooter {
     width: 100%;
+  }
+  .footer h2{
+    margin: 0 .7rem;
+  }
+  .footer a{
+    margin: 0.5rem;
   }
 }
-
-
