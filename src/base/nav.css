@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .navig{
   max-height: 10vh;
   z-index: 2;
@@ -5,10 +12,17 @@
 }
 .navig,
 .underNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .navig *,
  .navig *:hover {
@@ -17,6 +31,7 @@
 .logo {
     width: 4rem;
     margin: .5rem;
+    position: -webkit-sticky !important;
     position: sticky !important;
     cursor: pointer;
     z-index: 4;
@@ -43,6 +58,7 @@
   visibility: visible;
   font-size: 3rem;
   margin: 0 1rem;
+  position: -webkit-sticky !important;
   position: sticky !important;
   cursor: pointer;
   z-index: 3;
@@ -55,8 +71,13 @@
   width: 100vw;
   margin-left: -200vw;
   opacity: 0;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: inherit;
+  -webkit-transition: margin .5s ease-in-out, opacity .5s ease-in-out;
+  -o-transition: margin .5s ease-in-out, opacity .5s ease-in-out;
   transition: margin .5s ease-in-out, opacity .5s ease-in-out;
 }
 .navOpen{
