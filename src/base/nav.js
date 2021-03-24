@@ -21,7 +21,7 @@ export default function Nav() {
   };
 
   return (
-    <>
+    <><div id="place">
       <nav className={`navig fixed ${isActive ? "fixedNav" : ""}`}>
         <Link to="/Home">
             <img
@@ -48,7 +48,7 @@ export default function Nav() {
         </div>
         <div onClick={showNav} className="right" children={<Icons className="Icon" />}></div>
       </nav>
-      <div id="place"></div>
+      </div>
       </>
   );
 }

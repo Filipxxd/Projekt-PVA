@@ -1,11 +1,12 @@
-.navig{
-
+#place {
+  height: 10vh;
+}
+.navig {
+  position: fixed;
+  top: 0;
   max-height: 10vh;
   width: 100vw;
   background-color: #efefed;
-}
-#place{
-  height: 0;
 }
 .navig,
 .underNav {
@@ -15,16 +16,16 @@
   align-content: center;
 }
 .navig *,
- .navig *:hover {
+.navig *:hover {
   text-decoration: none;
 }
 .logo {
-    position: sticky;
-    cursor: pointer;
-    width: 4.5rem;
-    margin: .5rem;
+  position: sticky;
+  cursor: pointer;
+  width: 4.5rem;
+  margin: 0.5rem;
 }
-.right{
+.right {
   margin-left: auto;
 }
 .Icon {
@@ -35,36 +36,32 @@
   cursor: pointer;
 }
 .underNav a {
-  margin: 1.2rem 0;
-  padding: .5rem;
+  margin: 1.2rem 1rem;
+  padding: 0.5rem;
 }
 
 @media screen and (max-width: 780px) {
-  .navig{
-    position: fixed;
+  .navig {
     top: 0;
   }
-  #place{
-    height: 10vh;
-    width: 100vw;
+
+  .Icon {
+    visibility: visible;
   }
-.Icon {
-  visibility: visible;
-}
-.underNav{
-  position: fixed;
-  background-color: inherit;
-  top: 0;  
-  height: 100vh;
-  width: 100vw;
-  margin-left: -200vw;
-  opacity: 0;
-  flex-direction: column;
-  z-index: inherit;
-  transition: margin .5s ease-in-out, opacity .5s ease-in-out;
-}
-.navOpen{
-  margin-left: 0vw;
-  opacity: 1;
-}
+  .underNav {
+    position: fixed;
+    background-color: inherit;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    margin-left: -200vw;
+    opacity: 0;
+    flex-direction: column;
+    z-index: inherit;
+    transition: margin 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .navOpen {
+    margin-left: 0vw;
+    opacity: 1;
+  }
 }
