@@ -22,7 +22,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className={`navig  ${isActive ? "fixedNav" : ""}`}>
+      <nav className={`navig fixed ${isActive ? "fixedNav" : ""}`}>
         <Link to="/Home">
             <img
               src={logo}
@@ -31,7 +31,7 @@ export default function Nav() {
               onClick={isActive ? showNav : console.log("missing")}
             />
           </Link>
-        <div className={`underNav ${isActive ? "navOpen" : ""}`}>
+        <div className={`underNav fixed ${isActive ? "navOpen" : ""}`}>
 
           <Link to="/About" onClick={showNav}>
             VYUŽITÍ
@@ -48,6 +48,7 @@ export default function Nav() {
         </div>
         <div onClick={showNav} className="right" children={<Icons className="Icon" />}></div>
       </nav>
-    </>
+      <div id="place"></div>
+      </>
   );
 }

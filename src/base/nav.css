@@ -1,69 +1,57 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 .navig{
+
   max-height: 10vh;
-  z-index: 2;
+  width: 100vw;
   background-color: #efefed;
+}
+#place{
+  height: 0;
 }
 .navig,
 .underNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .navig *,
  .navig *:hover {
   text-decoration: none;
 }
 .logo {
-    width: 4rem;
-    margin: .5rem;
-    position: -webkit-sticky !important;
-    position: sticky !important;
+    position: sticky;
     cursor: pointer;
-    z-index: 4;
+    width: 4.5rem;
+    margin: .5rem;
 }
 .right{
   margin-left: auto;
 }
 .Icon {
   visibility: hidden;
+  margin: 1rem;
+  font-size: 2.5rem;
+  position: sticky;
+  cursor: pointer;
 }
-.underNav * {
-  color: green;
-  padding: 2rem;
+.underNav a {
+  margin: 1.2rem 0;
+  padding: .5rem;
 }
 
 @media screen and (max-width: 780px) {
   .navig{
-    position: sticky !important;
-    position: -webkit-sticky;
+    position: fixed;
     top: 0;
+  }
+  #place{
+    height: 10vh;
     width: 100vw;
   }
 .Icon {
   visibility: visible;
-  font-size: 3rem;
-  margin: 0 1rem;
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  cursor: pointer;
-  z-index: 3;
-
-}.underNav{
+}
+.underNav{
   position: fixed;
   background-color: inherit;
   top: 0;  
@@ -71,18 +59,12 @@
   width: 100vw;
   margin-left: -200vw;
   opacity: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   z-index: inherit;
-  -webkit-transition: margin .5s ease-in-out, opacity .5s ease-in-out;
-  -o-transition: margin .5s ease-in-out, opacity .5s ease-in-out;
   transition: margin .5s ease-in-out, opacity .5s ease-in-out;
 }
 .navOpen{
   margin-left: 0vw;
   opacity: 1;
-  z-index: 3;
 }
 }
