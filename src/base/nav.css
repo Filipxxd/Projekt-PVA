@@ -7,6 +7,8 @@
   max-height: 15vh;
   width: 100vw;
   background-color: #efefed;
+  font-weight: bold;
+  letter-spacing: .5px;
   z-index: 2;
 }
 .navig,
@@ -15,10 +17,6 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-}
-object {
-  stroke: #313639;
-  fill: #313639;
 }
 .navig *,
 .navig *:hover {
@@ -30,11 +28,6 @@ object {
   width: 4.5rem;
   margin: 1rem;
   z-index: 2;
-  color: #313639;
-}
-.activ{
-  color: red;
-  background-color: green;
 }
 .right {
   margin-left: auto;
@@ -77,6 +70,4 @@ object {
     margin-left: 0vw;
     opacity: 1;
   }
-}
-@media screen and (min-width: 768px) {
 }

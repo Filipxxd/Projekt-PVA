@@ -5,17 +5,17 @@
 .bar {
   height: 0.2rem;
   background-color: #313639;
-  border-radius: 25px;
-  width: 99vw;
+  width: 100%;
   margin: 0.4rem auto;
 }
 .before {
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0.5rem;
 }
 .before * {
   color: #313639;
@@ -26,16 +26,13 @@
 }
 .after a {
   color: #313639;
-  margin: .7rem;
+  margin: 0.7rem;
   transition: all 0.5s ease;
 }
 .after a:hover {
   color: #464a4b;
 }
 @media screen and (max-width: 769px) {
-  .bar {
-    width: 99vw;
-  }
   .before {
     flex-direction: column;
     vertical-align: middle;
@@ -47,7 +44,6 @@
     font-size: 1.35rem;
   }
   .before svg {
-    
     font-size: 2rem;
     position: relative;
     top: -0.1rem;
@@ -64,14 +60,14 @@
     align-content: space-around;
     text-align: center;
   }
-  .before *{
-      font-size: 1.5rem;
+  .before * {
+    font-size: 1.5rem;
   }
-  .before svg{
-      margin-top: 1rem;
-      font-size: 3rem;
+  .before svg {
+    margin-top: 1rem;
+    font-size: 3rem;
   }
-  .after{
-      font-size: 2.5rem;
+  .after {
+    font-size: 2.5rem;
   }
 }
