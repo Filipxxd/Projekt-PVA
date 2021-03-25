@@ -21,14 +21,17 @@ export default function footer() {
           <FaPhoneAlt />
           <p>+420 666 666 666</p>
         </div>
-        <a
+        <div>
+          <a
           className="kontakt"
-          href="mailto:randomgmail@gmail.com"
+          href="mailto:mail@gmail.com"
           title="E-mail"
         >
           <FaEnvelope />
-          <p>randomgmail@gmail.com</p>
+          <p>mail@gmail.com</p>
         </a>
+        </div>
+        
       </div>
       <div className="bar"></div>
       <div className="after">

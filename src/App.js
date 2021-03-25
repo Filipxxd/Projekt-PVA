@@ -7,9 +7,7 @@ import Vyuziti from "./pages/vyuziti.js";
 import Produkty from "./pages/produkty.js";
 import Shop from "./pages/shop.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 function App() {
-  console.log(window.location.href)
   return (
     <>
       <Helmet />

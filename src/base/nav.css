@@ -1,6 +1,5 @@
 #place {
-  height: 10vh;
-  width: 100vw;
+  margin-bottom: 10vh;
 }
 .navig {
   position: fixed;
@@ -55,7 +54,7 @@ object {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 786px) {
   .navig {
     top: 0;
   }

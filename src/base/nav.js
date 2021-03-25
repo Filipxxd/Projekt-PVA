@@ -5,7 +5,7 @@ import "./nav.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Nav() {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(false);
   function Icons() {
     if (!isActive) {
       return <FaBars className="Icon" />;

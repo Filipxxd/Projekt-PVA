@@ -11,6 +11,11 @@
 }
 .before {
   display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center
 }
 .before * {
   color: #313639;
@@ -33,14 +38,17 @@
   }
   .before {
     flex-direction: column;
+    vertical-align: middle;
+    align-items: left;
   }
   .before * {
     display: inline-flex;
     margin: 0.7rem;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
   .before svg {
-    font-size: 1.9rem;
+    
+    font-size: 2rem;
     position: relative;
     top: -0.1rem;
   }
@@ -57,7 +65,7 @@
     text-align: center;
   }
   .before *{
-      font-size: 2rem;
+      font-size: 1.5rem;
   }
   .before svg{
       margin-top: 1rem;

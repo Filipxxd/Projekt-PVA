@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: center;
 }
-.ghub{
+.ghub {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -36,25 +36,36 @@
   background-color: #efefed;
   border-radius: 8px;
 }
-.bax{
-  width: 20vw;
-  height: 1rem;
+.bax {
+  width: 25rem;
+  margin: 1rem;
+  height: 0.3rem;
+  border-radius: 8px;
   background-color: #efefed;
 }
-.ghub{
+.ghub {
   letter-spacing: 1px;
+  transition: background-color 0.7s ease-in-out, 
+  transform 0.6s ease-in-out,
+    color 0.7s ease-in-out;
 }
-.ghub *{
-  margin: .7rem 1rem;
+.ghub * {
+  margin: 0.7rem 1rem;
 }
-.ghub svg{
+.ghub svg {
   font-size: 2.5rem;
-  margin-right: -.5rem;
-  
+  margin-right: -0.5rem;
 }
-@media screen and (max-width: 786px){
+.ghub:hover {
+  background-color: #551a8b;
+  color: #efefed;
+  transform: scale(1.08);
+}
+@media screen and (max-width: 786px) {
   .hLogo {
     width: 10rem;
   }
+  .bax{
+    width: 10rem;
+  }
 }
-
