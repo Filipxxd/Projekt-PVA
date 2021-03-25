@@ -8,6 +8,7 @@
   width: 100vw;
   background-color: #efefed;
   z-index: 2;
+  letter-spacing: 1px;
 }
 .navig,
 .underNav {
@@ -51,7 +52,7 @@ object {
   margin: 1.2rem 1rem;
   padding: 0.5rem;
   color: #313639;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 786px) {
