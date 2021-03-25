@@ -10,7 +10,7 @@
   height: 100%;
   width: 100%;
   filter: blur(4px);
-  -webkit-filter: blur(2px);
+  -webkit-filter: blur(4px);
   position: absolute;
 }
 .bot {

@@ -3,8 +3,9 @@ import Nav from "./base/nav";
 import Footer from "./base/ffooter.js";
 import Home from "./pages/home.js";
 import Kanabinoidy from "./pages/kanabino.js";
-import About from "./pages/vyuziti.js";
-import Porovnani from "./pages/porovnani.js";
+import Vyuziti from "./pages/vyuziti.js";
+import Produkty from "./pages/produkty.js";
+import Shop from "./pages/shop.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -14,11 +15,11 @@ function App() {
       <Router>
         <Nav />
         <Switch>
-          <Route path="/" exact component={Home} />
           <Route path="/Kanabinoidy" component={Kanabinoidy} />
-          <Route path="/About" component={About} />
-          <Route path="/Porovnani" component={Porovnani} />
-          <Route path="" component={Home} />
+          <Route path="/About" component={Vyuziti} />
+          <Route path="/Produkty" component={Produkty} />
+          <Route path="/Shop" component={Shop} />
+          <Route path="/" component={Home} />
         </Switch>
       </Router>
       <Footer />

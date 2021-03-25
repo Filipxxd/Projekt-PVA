@@ -36,11 +36,11 @@ export default function Nav() {
           <Link to="/Kanabinoidy" onClick={showNav}>
             KANABINOIDY
           </Link>
-          <Link to="/Porovnani" onClick={showNav}>
-            POHLAVÍ ROSTLIN
+          <Link to="/Shop" onClick={showNav}>
+            FAKESHOP
           </Link>
-          <Link to="/" onClick={showNav}>
-            BLA
+          <Link to="/Produkty" onClick={showNav}>
+            PRODUKTY
           </Link>
         </div>
         <div
