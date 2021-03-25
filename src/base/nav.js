@@ -17,9 +17,6 @@ export default function Nav() {
     setActive(!isActive);
     Icons(isActive);
 }
-window.addEventListener("resize", ()=>{
-  setActive(false)
-})
   return (
     <div id="place">
       <nav className={`navig fixed ${isActive ? "fixedNav" : ""}`}>
