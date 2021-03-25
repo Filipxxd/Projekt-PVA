@@ -1,10 +1,6 @@
-import React from 'react';
-import "./home.css"
+import React from "react";
+import "./home.css";
 
 export default function home() {
-    return (
-        <div className="bg">
-           
-    </div>
-    )
+  return <div className="bg"></div>;
 }

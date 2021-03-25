@@ -1,7 +1,6 @@
 .footer {
   background-color: #e9ecef;
   width: 100%;
-
 }
 .wrapfooter {
   display: flex;
@@ -23,7 +22,6 @@
   top: -0.15rem;
   margin: 0.1rem;
 }
-
 @media screen and (min-width: 1000px) {
   .footer {
     position: absolute;
@@ -36,7 +34,7 @@
   .footer h2 {
     margin: 1rem;
   }
-  .footer a{
+  .footer a {
     margin: 0.5rem 2rem;
   }
 }
@@ -52,10 +50,10 @@
   .wrapfooter {
     width: 100%;
   }
-  .footer h2{
-    margin: 0 .7rem;
+  .footer h2 {
+    margin: 0 0.7rem;
   }
-  .footer a{
+  .footer a {
     margin: 0.5rem;
   }
 }

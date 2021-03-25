@@ -37,5 +37,5 @@ export default function Header() {
         </section>
       </main>
     </div>
-  )
+  );
 }
