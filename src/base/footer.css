@@ -1,59 +1,43 @@
 .footer {
   background-color: #e9ecef;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: center;
   width: 100%;
 }
-.wrapfooter {
-  display: flex;
-}
-.Links,
-.Place {
-  width: 50%;
-}
-.Author {
-  text-align: center;
+
+/* Uprava rozlozeni polozek na 2/1 */
+.Links, .Place{
+  width: 100%;
 }
 
-.footer a {
-  display: block;
-  font-size: 1.4rem;
+.Author{
+  text-align: center;
+  width: 100vw;
 }
-.FIco {
-  position: relative;
-  top: -0.15rem;
-  margin: 0.1rem;
+/* github... ikona + text flexbox */
+.footer span a{
+  display: flex;
+  font-size: 1.5rem;
+  margin: .5rem 2rem;
+  width: 30%;
+  margin: 1rem;
 }
-@media screen and (min-width: 1000px) {
+.footer a p{
+  margin-left: .5rem;
+}
+
+@media screen and (min-width: 769px) {
   .footer {
-    position: absolute;
-    min-height: 37vh;
-    bottom: -37vh;
+
   }
-  .footer h3 {
-    padding: 1rem;
-  }
-  .footer h2 {
-    margin: 1rem;
-  }
-  .footer a {
-    margin: 0.5rem 2rem;
+  .Links, .Place{
+    width: 50%;
+  
   }
 }
-@media screen and (max-width: 1000px) {
-  .wrapfooter {
-    display: flex;
-  }
-  .Links,
-  .Place {
-    width: 100%;
-  }
-  .Author,
-  .wrapfooter {
-    width: 100%;
-  }
-  .footer h2 {
-    margin: 0 0.7rem;
-  }
-  .footer a {
-    margin: 0.5rem;
-  }
+@media screen and (max-width: 768px) {
 }

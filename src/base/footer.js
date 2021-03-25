@@ -5,39 +5,30 @@ import "./footer.css";
 export default function footer() {
   return (
     <footer className="footer">
-      <div className="wrapfooter">
-        <div className="Links">
-          <h2>Socky</h2>
-          <span>
-            <a href="https://github.com/Filipxxd/Projekt-PVA">
-              <FaGithub className="FIco" />
-              GitHub
-            </a>
-          </span>
-          <span>
-            <a href="/">
-              <FaFacebook className="FIco" />
-              FakeFacebook
-            </a>
-          </span>
-          <span>
-            <a href="/">
-              <FaInstagram className="FIco" />
-              FakeIG
-            </a>
-          </span>
-        </div>
-        <div className="Place">
-          <h2>Kontakt</h2>
-          <p>Zahrádka 6, 262 55 Petrovice</p>
-          <p>Tel: +420 666 666 666</p>
-          <p>attoroste@gmail.com</p>
-        </div>
+      <div className="Links">
+        <h2>Socky</h2>
+        <a href="https://github.com/Filipxxd/Projekt-PVA">
+          <FaGithub className="FIco" />
+          <p>GitHub</p>
+        </a>
+        <a href="/">
+          <FaFacebook className="FIco" />
+          <p>FakeFacebook</p>
+        </a>
+        <a href="/">
+          <FaInstagram className="FIco" />
+          <p>FakeIG</p>
+        </a>
       </div>
-
-      <div className="Author">
-        <h3>&copy; Filip Chromečka</h3>
+      <div className="Place">
+        <h2>Kontakt</h2>
+        <span>
+          Adresa: Zahrádka 6, 262 55 <strong>Petrovice</strong>
+        </span>
+        <span>Tel: +420 666 666 666</span>
+        <span>E-mail: randomgmail@gmail.com</span>
       </div>
+      <h3 className="Author">&copy; Filip Chromečka</h3>
     </footer>
   );
 }

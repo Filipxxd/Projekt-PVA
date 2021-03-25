@@ -1,9 +1,39 @@
-.bg {
-  min-height: 90vh;
-  width: 100vw;
-  background: url(../img/background.jpg) no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.mainX {
+  min-height: 100vh;
+  width: 102vw;
+  top: 0;
+  position: relative;
 }
+.bg {
+  background: url(../img/background.jpg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  filter: blur(4px);
+  -webkit-filter: blur(2px);
+  position: absolute;
+}
+.bot {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hLogo {
+  width: 20rem;
+  margin: .4rem;
+}
+.bot span {
+  font-size: 2rem;
+  width: 150%;
+}
+.bot {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+
+}
+

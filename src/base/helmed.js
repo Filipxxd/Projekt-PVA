@@ -1,11 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-function Helmed() {
+function helmed() {
   return (
     <div className="application">
       <Helmet>
-        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Projekt konopí</title>
         <link
@@ -98,4 +97,4 @@ function Helmed() {
     </div>
   );
 }
-export default Helmed;
+export default helmed;
