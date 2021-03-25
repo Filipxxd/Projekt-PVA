@@ -4,15 +4,14 @@
 .box * {
   margin: auto;
 }
-
-.box header {
-  width: 100vw;
-  background-color: #e9ecef;
-}
 .box h1 {
   text-align: left;
   padding: 5rem 2rem;
   font-size: 3.5rem;
+}
+.box header {
+  width: 100vw;
+  background-color: #efefed;
 }
 .box h2 {
   margin: 1rem 0;
@@ -37,11 +36,14 @@
   }
   .box section {
     margin: 1rem;
-  }
-}
+  }}
 @media screen and (max-width: 780px) {
   .box main {
     flex-direction: column;
+  }
+  .box h1{
+    width: 100vw;
+    font-size: 2.5rem ;
   }
   .box p {
     width: 95%;

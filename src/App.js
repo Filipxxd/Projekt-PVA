@@ -1,6 +1,6 @@
 import Helmet from "./base/helmed.js";
 import Nav from "./base/nav";
-import Footer from "./base/ffooter.js";
+import Footer from "./base/footer.js";
 import Home from "./pages/home.js";
 import Kanabinoidy from "./pages/kanabino.js";
 import Vyuziti from "./pages/vyuziti.js";
@@ -9,6 +9,7 @@ import Shop from "./pages/shop.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  console.log(window.location.href)
   return (
     <>
       <Helmet />

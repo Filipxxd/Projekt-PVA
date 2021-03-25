@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../img/Logo.svg";
 import "./home.css";
-
+import {FaGithub} from "react-icons/fa";
 export default function home() {
   return (
     <>
@@ -10,7 +10,12 @@ export default function home() {
         <div className="bg"></div>
         <div className="bot">
          <img src={logo} alt="Logo" className="hLogo" />
-        <span>Léčivé konopí</span> 
+         <br className="bax" />
+        <a href="https://github.com/Filipxxd/Projekt-PVA" className="ghub">
+          <FaGithub/>
+          <p>GITHUB</p>
+          </a>
+        
         </div>
         
       </div>

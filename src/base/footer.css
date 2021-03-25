@@ -1,43 +1,69 @@
 .footer {
-  background-color: #e9ecef;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: flex-start;
-	align-content: center;
-  width: 100%;
-}
-
-/* Uprava rozlozeni polozek na 2/1 */
-.Links, .Place{
-  width: 100%;
-}
-
-.Author{
-  text-align: center;
   width: 100vw;
+  background-color: #efefed;
 }
-/* github... ikona + text flexbox */
-.footer span a{
+.bar {
+  height: 0.2rem;
+  background-color: #313639;
+  border-radius: 25px;
+  width: 99vw;
+  margin: 0.4rem auto;
+}
+.before {
   display: flex;
-  font-size: 1.5rem;
-  margin: .5rem 2rem;
-  width: 30%;
-  margin: 1rem;
 }
-.footer a p{
-  margin-left: .5rem;
+.before * {
+  color: #313639;
 }
-
+.after {
+  text-align: right;
+  background-color: #efefed;
+}
+.after a {
+  color: #313639;
+  margin: .7rem;
+  transition: all 0.5s ease;
+}
+.after a:hover {
+  color: #464a4b;
+}
+@media screen and (max-width: 769px) {
+  .bar {
+    width: 99vw;
+  }
+  .before {
+    flex-direction: column;
+  }
+  .before * {
+    display: inline-flex;
+    margin: 0.7rem;
+    font-size: 1.5rem;
+  }
+  .before svg {
+    font-size: 1.9rem;
+    position: relative;
+    top: -0.1rem;
+  }
+  .after {
+    font-size: 2.5rem;
+  }
+}
 @media screen and (min-width: 769px) {
-  .footer {
-
+  .before {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
   }
-  .Links, .Place{
-    width: 50%;
-  
+  .before *{
+      font-size: 2rem;
   }
-}
-@media screen and (max-width: 768px) {
+  .before svg{
+      margin-top: 1rem;
+      font-size: 3rem;
+  }
+  .after{
+      font-size: 2.5rem;
+  }
 }

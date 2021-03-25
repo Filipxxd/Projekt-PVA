@@ -1,5 +1,6 @@
 #place {
   height: 10vh;
+  width: 100vw;
 }
 .navig {
   position: fixed;
@@ -16,6 +17,10 @@
   align-items: center;
   align-content: center;
 }
+object {
+  stroke: #313639;
+  fill: #313639;
+}
 .navig *,
 .navig *:hover {
   text-decoration: none;
@@ -26,6 +31,11 @@
   width: 4.5rem;
   margin: 1rem;
   z-index: 2;
+  color: #313639;
+}
+.activ{
+  color: red;
+  background-color: green;
 }
 .right {
   margin-left: auto;
@@ -41,13 +51,14 @@
 .underNav a {
   margin: 1.2rem 1rem;
   padding: 0.5rem;
+  color: #313639;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 780px) {
   .navig {
     top: 0;
   }
-
   .Icon {
     visibility: visible;
   }
@@ -67,4 +78,6 @@
     margin-left: 0vw;
     opacity: 1;
   }
+}
+@media screen and (min-width: 768px) {
 }
