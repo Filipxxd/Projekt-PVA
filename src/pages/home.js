@@ -9,7 +9,7 @@ export default function home() {
       <div className="mainX">
         <div className="bg"></div>
         <div className="bot">
-         <img src={logo} alt="Logo" className="hLogo" />
+         <h1>KONOPÍ</h1>
          <div className="bax" />
         <a href="https://github.com/Filipxxd/Projekt-PVA" className="ghub">
           <FaGithub/>

@@ -5,17 +5,11 @@
 .bar {
   height: 0.2rem;
   background-color: #313639;
-  border-radius: 25px;
-  width: 99vw;
-  margin: 0.4rem auto;
+  width: 100vw;
+  margin: 0.4rem 0;
 }
 .before {
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center
 }
 .before * {
   color: #313639;
@@ -33,9 +27,6 @@
   color: #464a4b;
 }
 @media screen and (max-width: 769px) {
-  .bar {
-    width: 99vw;
-  }
   .before {
     flex-direction: column;
     vertical-align: middle;
@@ -63,12 +54,13 @@
     align-items: center;
     align-content: space-around;
     text-align: center;
+    
   }
   .before *{
       font-size: 1.5rem;
   }
   .before svg{
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       font-size: 3rem;
   }
   .after{
