@@ -15,7 +15,7 @@ export default function footer() {
       <div className="before">
         <div className="kontakt" title="Adresa">
           <FaWarehouse />
-          <p>Zahrádka 6, 262 55 Petrovice</p>
+          <p>Kaménka 6, 742 38 Odry</p>
         </div>
         <div className="kontakt" title="Telefonní číslo">
           <FaPhoneAlt />

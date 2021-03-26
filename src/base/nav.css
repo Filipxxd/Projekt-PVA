@@ -6,9 +6,8 @@
   top: 0;
   width: 100vw;
   background-color: #efefed;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   z-index: 2;
-
 }
 .navig,
 .underNav {
@@ -45,10 +44,10 @@
   padding: 0.5rem;
   color: #313639;
   font-size: 1.3rem;
-  transition: transform .3s ease-out;
+  transition: transform 0.25s ease-in-out;
 }
-.underNav a:hover{
-  transform: scale(1.05);
+.underNav a:hover {
+  transform: scale(1.04);
 }
 
 @media screen and (max-width: 786px) {
