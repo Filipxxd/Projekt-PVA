@@ -11,7 +11,7 @@ export default function home() {
          <div className="bot">
  <h1>KONOPÍ</h1>
          <div className="bax" />
-        <a href="https://github.com/Filipxxd/Projekt-PVA" className="ghub">
+        <a href="https://github.com/Filipxxd/Projekt-PVA" target="_blank" rel="noreferrer" className="ghub">
           <FaGithub/>
           <p>GITHUB</p>
           </a>

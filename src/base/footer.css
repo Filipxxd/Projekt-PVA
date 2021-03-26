@@ -2,51 +2,40 @@
   width: 100vw;
   background-color: #efefed;
 }
-.bar {
-  height: 0.2rem;
-  background-color: #313639;
-  width: 100%;
-  margin: 0.4rem auto;
-}
 .before {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 0.5rem;
+  padding: .7rem 0 2rem 0;
 }
 .before * {
   color: #313639;
 }
 .after {
-  text-align: right;
+  text-align: center;
   background-color: #efefed;
 }
 .after a {
   color: #313639;
-  margin: 0.7rem;
-  transition: all 0.5s ease;
+  margin: 0 0.7rem;
+  transition: color 0.5s ease;
 }
 .after a:hover {
-  color: #464a4b;
+  color: #4f5152;
 }
 @media screen and (max-width: 769px) {
   .before {
     flex-direction: column;
-    vertical-align: middle;
-    align-items: left;
+    padding: 1.7rem  0;
   }
   .before * {
     display: inline-flex;
-    margin: 0.7rem;
+    margin: 0.5rem 1rem;
     font-size: 1.35rem;
   }
   .before svg {
     font-size: 2rem;
     position: relative;
-    top: -0.1rem;
+    top: -0.3rem;
   }
   .after {
     font-size: 2.5rem;
@@ -54,17 +43,17 @@
 }
 @media screen and (min-width: 769px) {
   .before {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-    text-align: center;
+    display: flex;
   }
-  .before * {
+  .before div {
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3%;
   }
   .before svg {
-    margin-top: 1rem;
+    margin: 1rem;
     font-size: 3rem;
   }
   .after {

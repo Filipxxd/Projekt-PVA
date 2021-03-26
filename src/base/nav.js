@@ -29,17 +29,17 @@ export default function Nav() {
           />
         </Link>
         <div className={`underNav fixed ${isActive ? "navOpen" : ""}`}>
-          <Link to="/About" onClick={showNav} className="activate">
-            VYUŽITÍ
-          </Link>
           <Link to="/Kanabinoidy" onClick={showNav} className="activate">
             KANABINOIDY
+          </Link>
+          <Link to="/Produkty" onClick={showNav} className="activate">
+            PRODUKTY
           </Link>
           <Link to="/Shop" onClick={showNav} className="activate">
             FAKESHOP
           </Link>
-          <Link to="/Produkty" onClick={showNav} className="activate">
-            PRODUKTY
+          <Link to="/About" onClick={showNav} className="activate">
+            VYUŽITÍ
           </Link>
         </div>
         <div

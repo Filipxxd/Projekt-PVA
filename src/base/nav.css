@@ -4,12 +4,11 @@
 .navig {
   position: fixed;
   top: 0;
-  max-height: 15vh;
   width: 100vw;
   background-color: #efefed;
-  font-weight: bold;
   letter-spacing: .5px;
   z-index: 2;
+
 }
 .navig,
 .underNav {
@@ -17,6 +16,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  font-weight: bold;
 }
 .navig *,
 .navig *:hover {
@@ -45,6 +45,10 @@
   padding: 0.5rem;
   color: #313639;
   font-size: 1.3rem;
+  transition: transform .3s ease-out;
+}
+.underNav a:hover{
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 786px) {
@@ -53,6 +57,7 @@
   }
   .Icon {
     visibility: visible;
+    color: #313639;
   }
   .underNav {
     position: fixed;

@@ -26,27 +26,30 @@
   align-items: center;
 }
 .bot h1 {
-  font-size: 2rem;
+  font-size: 4rem;
+  color: #313639;
 }
 .ghub {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #efefed;
+  background-color: transparent;
   border-radius: 8px;
 }
 .bax {
-  width: 25rem;
-  margin: 1rem;
+  width: 20rem;
+  margin: .5rem;
   height: 0.3rem;
   border-radius: 8px;
-  background-color: #efefed;
+  background-color: #313639;
 }
 .ghub {
   letter-spacing: 1px;
   transition: background-color 0.7s ease-in-out, transform 0.6s ease-in-out,
     color 0.7s ease-in-out;
+    font-weight: bold;
+    color: #313639;
 }
 .ghub * {
   margin: 0.7rem 1rem;
@@ -56,12 +59,7 @@
   margin-right: -0.5rem;
 }
 .ghub:hover {
-  background-color: #551a8b;
+  background-color: #313639;
   color: #efefed;
-  transform: scale(1.08);
-}
-@media screen and (max-width: 786px) {
-  .bax {
-    width: 10rem;
-  }
+  transform: scale(1.04);
 }
