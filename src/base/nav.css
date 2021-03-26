@@ -19,12 +19,13 @@
   opacity: 0;
   visibility: hidden;
   z-index: inherit;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; /* TEMPORARY */
   font-size: 1.5rem;
 }
 .underNav a{
+  position: relative;
   margin: 0 .5rem;
-  padding: .4rem;
+  padding: .2rem .4rem;
   font-weight: bold;
   color: var(--black);
 }
@@ -80,8 +81,18 @@
     opacity: 1;
     visibility: visible;
   }
-}
-/* TEMPORARY */
-.active {
-  background-color: aqua;
+  .underNav a::after{
+    content: "";
+    display: inline-flex;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 100%;
+    transform: translateY(-25%)translateX(100%)rotate(30deg);
+    background-color: var(--black);
+    transition: transform .5s ease-in-out, left .5s ease;
+  }
+  .underNav a.active::after,.underNav a:hover::after{
+    transform: rotate(0deg);
+    left: .2rem;
+  }
 }
