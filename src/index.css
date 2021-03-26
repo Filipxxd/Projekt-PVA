@@ -1,12 +1,18 @@
+:root{
+  --black: #313639;
+  --white: #efefed;
+  }
 * {
   margin: 0;
   padding: 0;
+  transition: all .05s ease;
 }
 html {
   scroll-behavior: smooth;
+  font-size: 1.2rem;
 }
 body {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -31,19 +37,19 @@ li {
 .none {
   display: none;
 }
-@media screen and (min-height: 801px){
-  #place{
-    margin-bottom: 5rem;
+@media screen and (min-height: 1200px){
+  html{
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 768px){
   html{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 1100px){
   html{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1500px){

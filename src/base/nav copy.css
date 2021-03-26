@@ -1,0 +1,69 @@
+body {
+  margin-top: 5rem;
+}
+.navig {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: #efefed;
+  z-index: 2;
+}
+.navig,
+.underNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.logo {
+  cursor: pointer;
+  width: 4.5rem;
+  margin: 1rem;
+  z-index: 2;
+}
+.right {
+  margin-left: auto;
+}
+.Icon {
+  visibility: hidden;
+  margin: 1rem;
+  font-size: 2.5rem;
+  position: sticky;
+  cursor: pointer;
+  z-index: 3;
+}
+.underNav a {
+  margin: 1.2rem 1rem;
+  padding: 0.5rem;
+  color: #313639;
+  font-size: 1.3rem;
+  transition: transform 0.25s ease-in-out;
+}
+.underNav a:hover {
+  transform: scale(1.04);
+}
+@media screen and (max-width: 786px) {
+  .navig {
+    top: 0;
+  }
+  .Icon {
+    visibility: visible;
+    color: #313639;
+  }
+  .underNav {
+    position: fixed;
+    background-color: inherit;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -200vw;
+    opacity: 0;
+    flex-direction: column;
+    z-index: inherit;
+    transition: margin 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .navOpen {
+    margin-left: 0vw;
+    opacity: 1;
+  }
+}

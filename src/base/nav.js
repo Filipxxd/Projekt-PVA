@@ -1,52 +1,49 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../img/Logo.svg";
 import "./nav.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Nav() {
   const [isActive, setActive] = useState(false);
-  function Icons() {
-    if (!isActive) {
-      return <FaBars className="Icon" />;
+  function NavIcon() {
+    if (isActive) {
+      return <FaTimes onClick={showNav} className={"NavToggleIcon"}/>;
     } else {
-      return <FaTimes className="Icon" />;
+      return <FaBars onClick={showNav} className={"NavToggleIcon"}/>;
     }
   }
   const showNav = () => {
     setActive(!isActive);
-    Icons(isActive);
+    NavIcon(isActive);
 }
   return (
     <div id="place">
-      <nav className={`navig fixed ${isActive ? "fixedNav" : ""}`}>
+      <nav className={"navbar"}>
         <Link to="/Home">
           <img
             src={logo}
             alt="Logo"
-            className="logo"
+            title = "Konopí"
+            className={"Logo"}
             onClick={isActive ? showNav : console.log("missing")}
           />
         </Link>
-        <div className={`underNav fixed ${isActive ? "navOpen" : ""}`}>
-          <Link to="/Kanabinoidy" onClick={showNav} className="activate">
+        <div className={`underNav ${isActive ? "navToggle" : ""}`}>
+          <NavLink to="/Kanabinoidy" onClick={showNav}>
             KANABINOIDY
-          </Link>
-          <Link to="/Produkty" onClick={showNav} className="activate">
+          </NavLink>
+          <NavLink to="/Produkty" onClick={showNav}>
             PRODUKTY
-          </Link>
-          <Link to="/Shop" onClick={showNav} className="activate">
+          </NavLink>
+          <NavLink to="/Shop" onClick={showNav}>
             FAKESHOP
-          </Link>
-          <Link to="/About" onClick={showNav} className="activate">
+          </NavLink>
+          <NavLink to="/About" onClick={showNav}>
             VYUŽITÍ
-          </Link>
+          </NavLink>
         </div>
-        <div
-          onClick={showNav}
-          className="right"
-          children={<Icons className="Icon" />}
-        ></div>
+        <NavIcon className={"NavToggleIcon"}/>
       </nav>
     </div>
   );

@@ -1,77 +1,87 @@
 #place {
-  margin-bottom: 10vh;
+  /* temporary fix */
+  min-height: 6rem; 
+  background-color: var(--white);
 }
-.navig {
+.navbar {
+  background-color: inherit;
   position: fixed;
   top: 0;
-  width: 100vw;
-  background-color: #efefed;
-  letter-spacing: 0.5px;
-  z-index: 2;
+  z-index: 1;
+  width: 100%;
 }
-.navig,
+.navbar,
 .underNav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  align-content: center;
-  font-weight: bold;
 }
-.navig *,
-.navig *:hover {
-  text-decoration: none;
-}
-.logo {
-  position: sticky;
-  cursor: pointer;
-  width: 4.5rem;
-  margin: 1rem;
-  z-index: 2;
-}
-.right {
-  margin-left: auto;
-}
-.Icon {
+.underNav {
+  opacity: 0;
   visibility: hidden;
-  margin: 1rem;
-  font-size: 2.5rem;
-  position: sticky;
-  cursor: pointer;
+  z-index: inherit;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.5rem;
+}
+.underNav a{
+  margin: 0 .5rem;
+  padding: .4rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.NavToggleIcon{
+  visibility: hidden;
+}
+.Logo{
+  width: 5rem;
   z-index: 3;
+  margin: 1rem;
 }
-.underNav a {
-  margin: 1.2rem 1rem;
-  padding: 0.5rem;
-  color: #313639;
-  font-size: 1.3rem;
-  transition: transform 0.25s ease-in-out;
-}
-.underNav a:hover {
-  transform: scale(1.04);
-}
-
-@media screen and (max-width: 786px) {
-  .navig {
-    top: 0;
+@media screen and (max-width: 460px){
+  .Logo{
+    width: 5.5rem;
   }
-  .Icon {
+}
+@media screen and (max-width: 850px) {
+  .NavToggleIcon {
     visibility: visible;
-    color: #313639;
+    color: var(--black);
+    margin: 1rem 1rem 1rem auto;  /* 1rem odsazení každá strana, zleva auto aby zarovnal nakonec*/  
+    font-size: 3rem;
+    z-index: 1;
   }
+  /* FullSize otevreny "pod" navigator */
   .underNav {
     position: fixed;
-    background-color: inherit;
     top: 0;
-    height: 100vh;
-    width: 100vw;
-    margin-left: -200vw;
-    opacity: 0;
     flex-direction: column;
-    z-index: inherit;
-    transition: margin 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: -100%;
   }
-  .navOpen {
-    margin-left: 0vw;
+  .underNav a{
+    padding: 1.4rem;
+  }
+  /* otevreni "pod" navigatoru */
+  .navToggle {
+    background-color: inherit;
+    margin-left: 0;
     opacity: 1;
+    visibility: visible;
   }
+}
+@media screen and (min-width: 850px) {
+  .Icon {
+    visibility: hidden;
+  }
+  .underNav {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* TEMPORARY */
+.active {
+  background-color: aqua;
 }
