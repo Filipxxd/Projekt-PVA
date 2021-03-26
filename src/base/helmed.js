@@ -5,7 +5,6 @@ function helmed() {
   return (
     <div className="application">
       <Helmet>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Projekt konopí</title>
         <link
           rel="apple-touch-icon-precomposed"

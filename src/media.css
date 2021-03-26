@@ -1,0 +1,115 @@
+/* MOBILE */
+@media only screen {
+  html {
+    font-size: 11rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  html {
+    font-size: 1rem;
+  }
+} 
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+
+/* TABLET */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+/* DESKTOP  */
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  html {
+    font-size: 1.1rem;
+  }
+} 
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  html {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2500px) {
+  html {
+    font-size: 1.4rem;
+  }
+} 
+
+@media only screen and (min-width: 2501px) {
+    html {
+      font-size: 1.7rem;
+    }
+  } 
+
+
+/*------------------------------------------
+                    Foundation Media Queries 
+                    http://foundation.zurb.com/docs/media-queries.html
+                    --------------------------------------------*/

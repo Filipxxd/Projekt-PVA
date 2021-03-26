@@ -37,12 +37,7 @@
   z-index: 3;
   margin: 1rem;
 }
-@media screen and (max-width: 460px){
-  .Logo{
-    width: 5.5rem;
-  }
-}
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
   .NavToggleIcon {
     visibility: visible;
     color: var(--black);
@@ -63,7 +58,7 @@
     margin-left: -100%;
   }
   .underNav a{
-    padding: 1.4rem;
+    padding: 1.2rem;
   }
   /* otevreni "pod" navigatoru */
   .navToggle {
@@ -73,7 +68,7 @@
     visibility: visible;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1024px) {
   .Icon {
     visibility: hidden;
   }
@@ -92,7 +87,6 @@
     transition: transform .5s ease-in-out, left .5s ease;
   }
   .underNav a.active::after,.underNav a:hover::after{
-    transform: rotate(0deg);
-    left: .2rem;
+    
   }
 }
