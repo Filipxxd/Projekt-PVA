@@ -1,6 +1,6 @@
 #place {
   /* temporary fix */
-  min-height: 6rem; 
+  min-height: 6rem;
   background-color: var(--white);
 }
 .navbar {
@@ -20,30 +20,39 @@
   visibility: hidden;
   z-index: inherit;
   transition: all 0.5s ease-in-out; /* TEMPORARY */
-  font-size: 1.5rem;
+  font-size: 1.45rem;
 }
-.underNav a{
+.underNav a {
   position: relative;
-  margin: 0 .5rem;
-  padding: .2rem .4rem;
   font-weight: bold;
   color: var(--black);
+  letter-spacing: 1px;
+  padding: 0.5rem 0.8rem;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border-radius 0.5s ease-in;
+  border-radius: 5px;
 }
-.NavToggleIcon{
+.NavToggleIcon {
   visibility: hidden;
 }
-.Logo{
+.Logo {
   width: 5rem;
   z-index: 3;
   margin: 1rem;
+}
+.underNav a:hover,
+.active {
+  background-color: var(--black);
+  color: var(--white) !important;
 }
 @media screen and (max-width: 1024px) {
   .NavToggleIcon {
     visibility: visible;
     color: var(--black);
-    margin: 1rem 1rem 1rem auto;  /* 1rem odsazení každá strana, zleva auto aby zarovnal nakonec*/  
+    margin: 1rem 1rem 1rem auto; /* 1rem odsazení každá strana, zleva auto aby zarovnal nakonec*/
     font-size: 3rem;
     z-index: 1;
+    cursor: pointer;
   }
   /* FullSize otevreny "pod" navigator */
   .underNav {
@@ -57,8 +66,8 @@
     width: 100%;
     margin-left: -100%;
   }
-  .underNav a{
-    padding: 1.2rem;
+  .underNav a {
+    margin: 0.5rem;
   }
   /* otevreni "pod" navigatoru */
   .navToggle {
@@ -76,17 +85,25 @@
     opacity: 1;
     visibility: visible;
   }
-  .underNav a::after{
+  .underNav a {
+    margin: 0.5rem;
+  }
+  /* tečka za nav. linkem */
+  .underNav a::after {
     content: "";
     display: inline-flex;
-    width: .7rem;
-    height: .7rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.1rem;
     border-radius: 100%;
-    transform: translateY(-25%)translateX(100%)rotate(30deg);
+    transform: translateY(-15%) translateX(100%);
     background-color: var(--black);
-    transition: transform .5s ease-in-out, left .5s ease;
+    transition: transform 0.5s ease-in-out, height 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
   }
-  .underNav a.active::after,.underNav a:hover::after{
-    
+  .underNav a.active::after,
+  .underNav a:hover::after {
+    transform: translateY(-15%) translateX(35%);
+    background-color: var(--white);
   }
 }
