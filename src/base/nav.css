@@ -1,9 +1,9 @@
 #place {
-  /* temporary fix */
-  min-height: 6rem;
+  min-height: 5.5rem;
   background-color: var(--white);
 }
 .navbar {
+  max-height: 5.5rem;
   background-color: inherit;
   position: fixed;
   top: 0;
@@ -96,14 +96,14 @@
     height: 0.8rem;
     margin: 0.1rem;
     border-radius: 100%;
-    transform: translateY(-15%) translateX(100%);
+    transform: translateY(-15%) translateX(150%);
     background-color: var(--black);
     transition: transform 0.5s ease-in-out, height 0.3s ease-in-out,
       background-color 0.3s ease-in-out;
   }
   .underNav a.active::after,
   .underNav a:hover::after {
-    transform: translateY(-15%) translateX(35%);
+    transform: translateY(-15%) translateX(40%);
     background-color: var(--white);
   }
 }

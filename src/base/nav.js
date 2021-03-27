@@ -17,6 +17,9 @@ export default function Nav() {
     setActive(!isActive);
     NavIcon(isActive);
 }
+window.addEventListener("resize", () =>{
+  setActive(false)
+})
   return (
     <div id="place">
       <nav className={"navbar"}>
