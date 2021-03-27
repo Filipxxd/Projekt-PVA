@@ -3,9 +3,7 @@ import { Helmet } from "react-helmet";
 
 function helmed() {
   return (
-    <div className="application">
       <Helmet>
-        <title>Projekt konopí</title>
         <link
           rel="apple-touch-icon-precomposed"
           sizes="57x57"
@@ -92,8 +90,35 @@ function helmed() {
           name="msapplication-square310x310logo"
           content="mstile-310x310.png"
         />
+        <title>Projekt konopí</title>
+        <meta name="title" content="Projekt konopí" />
+        <meta property="og:title" content="Projekt konopí" />
+        <meta property="twitter:title" content="Projekt konopí" />
+        <meta
+          name="description"
+          content="Školní závěrečný projekt na téma léčivé konopí"
+        />
+        <meta
+          property="og:description"
+          content="Školní závěrečný projekt na téma léčivé konopí"
+        />
+        <meta
+          property="twitter:description"
+          content="Školní závěrečný projekt na téma léčivé konopí"
+        />
+        <meta property="og:type" content="website" />
+        {/* <meta property="og:url" content="https://metatags.io/" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta
+          property="og:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        /> */}
       </Helmet>
-    </div>
   );
 }
 export default helmed;

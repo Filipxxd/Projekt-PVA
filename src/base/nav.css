@@ -19,16 +19,17 @@
   opacity: 0;
   visibility: hidden;
   z-index: inherit;
-  transition: all 0.5s ease-in-out; /* TEMPORARY */
   font-size: 1.45rem;
 }
 .underNav a {
   position: relative;
+  z-index: 6;
+  display: inline-block;
   font-weight: bold;
   color: var(--black);
   letter-spacing: 1px;
   padding: 0.5rem 0.8rem;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out,
     border-radius 0.5s ease-in;
   border-radius: 5px;
 }
@@ -37,12 +38,10 @@
 }
 .Logo {
   width: 5rem;
-  z-index: 3;
   margin: 1rem;
 }
 .underNav a:hover,
 .active {
-  background-color: var(--black);
   color: var(--white) !important;
 }
 @media screen and (max-width: 1024px) {
@@ -51,7 +50,7 @@
     color: var(--black);
     margin: 1rem 1rem 1rem auto; /* 1rem odsazení každá strana, zleva auto aby zarovnal nakonec*/
     font-size: 3rem;
-    z-index: 1;
+    z-index: inherit;
     cursor: pointer;
   }
   /* FullSize otevreny "pod" navigator */
@@ -69,6 +68,10 @@
   .underNav a {
     margin: 0.5rem;
   }
+  .underNav a:hover,
+.active {
+  background-color: var(--black);
+}
   /* otevreni "pod" navigatoru */
   .navToggle {
     background-color: inherit;
@@ -85,20 +88,27 @@
     opacity: 1;
     visibility: visible;
   }
+  /* nav anim */
   .underNav a {
     margin: 0.5rem;
+    background: transparent;
+    background: linear-gradient(to right, transparent 50%, var(--black) 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
   }
-  /* tečka za nav. linkem */
+  .underNav a:hover,
+  .underNav a.active {
+    background-position: right bottom;
+  }
   .underNav a::after {
     content: "";
     display: inline-flex;
     width: 0.8rem;
     height: 0.8rem;
-    margin: 0.1rem;
     border-radius: 100%;
-    transform: translateY(-15%) translateX(150%);
+    transform: translateY(-15%) translateX(160%);
     background-color: var(--black);
-    transition: transform 0.5s ease-in-out, height 0.3s ease-in-out,
+    transition: transform 0.7s ease-in-out, height 0.3s ease-in-out,
       background-color 0.3s ease-in-out;
   }
   .underNav a.active::after,
