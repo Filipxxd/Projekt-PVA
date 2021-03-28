@@ -50,9 +50,7 @@
   /* navToggleIcon */
   .NavToggleWrapper {
     visibility: visible;
-    margin: 1rem 1rem 1rem auto; /* 1rem odsazení každá strana, zleva auto aby zarovnal nakonec*/
-    width: 4rem;
-    height: 3rem;
+    margin-left: auto;
   }
   .click {
     display: flex;
@@ -71,10 +69,14 @@
     width: 4rem;
     height: 3rem;
     top: 1rem;
+    right: 1rem;
     position: fixed;
   }
   .ToOpen {
     z-index: 0;
+    top: 1rem;
+    right: 1rem;
+    transform: scale(0.8) rotate(45deg);
   }
   .ToOpen:hover * {
     background-color: var(--clickedBlack);

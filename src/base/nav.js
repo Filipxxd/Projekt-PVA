@@ -8,12 +8,11 @@ export default function Nav() {
   const showNav = () => {
     setActive(!isActive);
   };
-
-
-
-
-
-
+  window.addEventListener("resize", ()=>{
+    console.log(isActive)
+    setActive(false)
+    console.log(isActive)
+  })
   return (
     <div id="place">
       <nav className={"navbar"}>
@@ -40,19 +39,17 @@ export default function Nav() {
             VYUŽITÍ
           </NavLink>
         </div>
-        <div className={"NavToggleWrapper"} onClick={ showNav}>
-        <span className={"click ToClose"}>
-          <i className={`firstLine ${!isActive ? "firstAnim" : ""}`} />
-          <i className={`secondLine ${!isActive ? "secondAnim" : ""}`} />
-        </span>
-
-
-        <span className="click ToOpen">
-          <i className={`topLine ${isActive ? "topAnim" : ""}`} />
-          <i className={`midLine ${isActive ? "midAnim" : ""}`}/>
-          <i className={`botLine ${isActive ? "botAnim" : ""}`} />
-        </span>
-</div>
+        <div className={"NavToggleWrapper"} onClick={showNav}>
+          <span className={"click ToClose"}>
+            <i className={`firstLine ${!isActive ? "firstAnim" : ""}`} />
+            <i className={`secondLine ${!isActive ? "secondAnim" : ""}`} />
+          </span>
+          <span className="click ToOpen">
+            <i className={`topLine ${isActive ? "topAnim" : ""}`} />
+            <i className={`midLine ${isActive ? "midAnim" : ""}`} />
+            <i className={`botLine ${isActive ? "botAnim" : ""}`} />
+          </span>
+        </div>
       </nav>
     </div>
   );
