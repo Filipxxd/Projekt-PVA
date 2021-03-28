@@ -10,17 +10,18 @@
   z-index: 1;
   width: 100%;
 }
-.navbar,
-.underNav {
+.navbar {
   display: flex;
   align-items: center;
 }
 .underNav {
   opacity: 0;
   visibility: hidden;
+  display: none;
+  align-items: center;
   z-index: inherit;
   font-size: 1.45rem;
-  transition: all 0.5s ease;
+  transition: visibility 0.5s ease, opacity 0.5s ease;
 }
 .underNav a {
   position: relative;
@@ -30,14 +31,19 @@
   color: var(--black);
   letter-spacing: 1px;
   padding: 0.5rem 0.8rem;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out,
-    border-radius 0.5s ease-in;
-  transition-delay: 0.05s;
   border-radius: 5px;
 }
-.Logo {
+/* wrapper aby scale neskakal */
+.Logowrap {
   width: 5rem;
-  margin: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.Logo {
+  transition: transform 0.6s ease;
+}
+.Logo:hover {
+  transform: scale(1.1);
 }
 .underNav a:hover,
 .active {
@@ -60,9 +66,15 @@
     cursor: pointer;
     transform: rotate(45deg);
     height: 100%;
+    padding: 0.2rem;
+  }
+  .click * {
+    border-radius: 10px;
+    background-color: var(--black);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in;
   }
   .click:hover * {
-    background-color: var(--clickedBlack);
+    width: 0.8rem;
   }
   .ToClose,
   .ToOpen {
@@ -72,48 +84,41 @@
     right: 1rem;
     position: fixed;
   }
+
   .ToOpen {
-    z-index: 0;
-    top: 1rem;
-    right: 1rem;
     transform: scale(0.8) rotate(45deg);
-  }
-  .ToOpen:hover * {
-    background-color: var(--clickedBlack);
   }
   .topLine,
   .midLine,
   .botLine {
-    border-radius: 5px;
-    width: 15%;
+    width: 20%;
     height: 100%;
-    background-color: var(--black);
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in;
   }
   .midLine {
     height: 130%;
+  }
+  .topAnim,
+  .botAnim {
+    transition-delay: 0.05s;
   }
   .topAnim {
     transform: translateX(-6rem);
   }
   .midAnim {
-    transform: translateY(-6rem);
+    transform: translateY(-7rem);
   }
   .botAnim {
     transform: translateX(6rem);
   }
+
   .ToClose {
     z-index: 1;
   }
   .firstLine,
   .secondLine {
-    width: 20%;
-    height: 100%;
-    background-color: var(--black);
-    border-radius: 5px;
-    z-index: 3;
+    width: 18%;
+    height: 90%;
     position: absolute;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in;
   }
   .secondLine {
     transform: rotate(90deg);
@@ -124,8 +129,10 @@
   .secondAnim {
     transform: translateX(-6rem) rotate(90deg);
   }
+
   /* FullSize otevreny "pod" navigator */
   .underNav {
+    display: flex;
     position: fixed;
     top: 0;
     flex-direction: column;
@@ -136,13 +143,6 @@
     width: 100%;
     margin-left: -100%;
   }
-  .underNav a {
-    margin: 0.5rem;
-  }
-  .underNav a:hover,
-  .active {
-    background-color: var(--black);
-  }
   /* otevreni "pod" navigatoru */
   .navToggle {
     background-color: inherit;
@@ -150,27 +150,38 @@
     opacity: 1;
     visibility: visible;
   }
+  .underNav a {
+    margin: 0.5rem;
+  }
+  /* nav link hover/aktiv bo desktop jinak */
+  .underNav a:hover,
+  .active {
+    background-color: var(--black);
+  }
 }
 @media screen and (min-width: 1024px) {
-  .Icon {
-    visibility: hidden;
-  }
   .underNav {
     opacity: 1;
     visibility: visible;
+    display: flex;
   }
-  /* nav anim */
+  /* nav link anim active/hover */
+
   .underNav a {
     margin: 0.5rem;
     background: transparent;
-    background: linear-gradient(to right, transparent 50%, var(--black) 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
+    background: linear-gradient(to top, transparent 50%, var(--black) 50%);
+    background-size: 100% 200%;
+    background-position: right bottom;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out,
+      border-radius 0.5s ease-in;
+    transition-delay: 0.05s;
   }
   .underNav a:hover,
   .underNav a.active {
-    background-position: right bottom;
+    background-position: right top;
   }
+  /* tečka mezi linky */
   .underNav a::after {
     content: "";
     display: inline-flex;
@@ -180,7 +191,7 @@
     transform: translateY(-15%) translateX(150%);
     background-color: var(--black);
     transition: transform 0.7s ease-in-out, height 0.3s ease-in-out,
-      background-color 0.3s ease-in-out;
+      background 0.3s ease-in-out;
   }
   .underNav a.active::after,
   .underNav a:hover::after {
