@@ -20,10 +20,11 @@
   visibility: hidden;
   z-index: inherit;
   font-size: 1.45rem;
+  transition: all 0.5s ease;
 }
 .underNav a {
   position: relative;
-  z-index: 6;
+  z-index: inherit;
   display: inline-block;
   font-weight: bold;
   color: var(--black);
@@ -31,10 +32,8 @@
   padding: 0.5rem 0.8rem;
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out,
     border-radius 0.5s ease-in;
+  transition-delay: 0.05s;
   border-radius: 5px;
-}
-.NavToggleIcon {
-  visibility: hidden;
 }
 .Logo {
   width: 5rem;
@@ -44,14 +43,84 @@
 .active {
   color: var(--white) !important;
 }
+.NavToggleWrapper {
+  visibility: hidden;
+}
 @media screen and (max-width: 1024px) {
-  .NavToggleIcon {
+  /* navToggleIcon */
+  .NavToggleWrapper {
     visibility: visible;
-    color: var(--black);
     margin: 1rem 1rem 1rem auto; /* 1rem odsazení každá strana, zleva auto aby zarovnal nakonec*/
-    font-size: 3rem;
-    z-index: inherit;
+    width: 4rem;
+    height: 3rem;
+  }
+  .click {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
     cursor: pointer;
+    transform: rotate(45deg);
+    height: 100%;
+  }
+  .click:hover * {
+    background-color: var(--clickedBlack);
+  }
+  .ToClose,
+  .ToOpen {
+    width: 4rem;
+    height: 3rem;
+    top: 1rem;
+    position: fixed;
+  }
+  .ToOpen {
+    z-index: 0;
+  }
+  .ToOpen:hover * {
+    background-color: var(--clickedBlack);
+  }
+  .topLine,
+  .midLine,
+  .botLine {
+    border-radius: 5px;
+    width: 15%;
+    height: 100%;
+    background-color: var(--black);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in;
+  }
+  .midLine {
+    height: 130%;
+  }
+  .topAnim {
+    transform: translateX(-6rem);
+  }
+  .midAnim {
+    transform: translateY(-6rem);
+  }
+  .botAnim {
+    transform: translateX(6rem);
+  }
+  .ToClose {
+    z-index: 1;
+  }
+  .firstLine,
+  .secondLine {
+    width: 20%;
+    height: 100%;
+    background-color: var(--black);
+    border-radius: 5px;
+    z-index: 3;
+    position: absolute;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in;
+  }
+  .secondLine {
+    transform: rotate(90deg);
+  }
+  .firstAnim {
+    transform: translateY(-6rem);
+  }
+  .secondAnim {
+    transform: translateX(-6rem) rotate(90deg);
   }
   /* FullSize otevreny "pod" navigator */
   .underNav {
@@ -69,9 +138,9 @@
     margin: 0.5rem;
   }
   .underNav a:hover,
-.active {
-  background-color: var(--black);
-}
+  .active {
+    background-color: var(--black);
+  }
   /* otevreni "pod" navigatoru */
   .navToggle {
     background-color: inherit;
@@ -106,14 +175,14 @@
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 100%;
-    transform: translateY(-15%) translateX(160%);
+    transform: translateY(-15%) translateX(150%);
     background-color: var(--black);
     transition: transform 0.7s ease-in-out, height 0.3s ease-in-out,
       background-color 0.3s ease-in-out;
   }
   .underNav a.active::after,
   .underNav a:hover::after {
-    transform: translateY(-15%) translateX(40%);
+    transform: translateY(-15%) translateX(45%);
     background-color: var(--white);
   }
 }

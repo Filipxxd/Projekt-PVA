@@ -2,24 +2,18 @@ import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../img/Logo.svg";
 import "./nav.css";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Nav() {
   const [isActive, setActive] = useState(false);
-  function NavIcon() {
-    if (isActive) {
-      return <FaTimes onClick={showNav} className={"NavToggleIcon"}/>;
-    } else {
-      return <FaBars onClick={showNav} className={"NavToggleIcon"}/>;
-    }
-  }
   const showNav = () => {
     setActive(!isActive);
-    NavIcon(isActive);
-}
-window.addEventListener("resize", () =>{
-  setActive(false)
-})
+  };
+
+
+
+
+
+
   return (
     <div id="place">
       <nav className={"navbar"}>
@@ -27,9 +21,9 @@ window.addEventListener("resize", () =>{
           <img
             src={logo}
             alt="Logo"
-            title = "Konopí"
+            title="Konopí"
             className={"Logo"}
-            onClick={isActive ? showNav : console.log("missing")}
+            onClick={isActive ? showNav : null}
           />
         </Link>
         <div className={`underNav ${isActive ? "navToggle" : ""}`}>
@@ -46,7 +40,19 @@ window.addEventListener("resize", () =>{
             VYUŽITÍ
           </NavLink>
         </div>
-        <NavIcon className={"NavToggleIcon"}/>
+        <div className={"NavToggleWrapper"} onClick={ showNav}>
+        <span className={"click ToClose"}>
+          <i className={`firstLine ${!isActive ? "firstAnim" : ""}`} />
+          <i className={`secondLine ${!isActive ? "secondAnim" : ""}`} />
+        </span>
+
+
+        <span className="click ToOpen">
+          <i className={`topLine ${isActive ? "topAnim" : ""}`} />
+          <i className={`midLine ${isActive ? "midAnim" : ""}`}/>
+          <i className={`botLine ${isActive ? "botAnim" : ""}`} />
+        </span>
+</div>
       </nav>
     </div>
   );

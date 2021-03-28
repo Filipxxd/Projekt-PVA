@@ -4,11 +4,18 @@
     font-size: 11rem;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   html {
     font-size: 1rem;
   }
-} 
+}
 
 /* Portrait */
 @media screen and (orientation: portrait) {
@@ -69,7 +76,6 @@
   }
 }
 
-
 /* TABLET */
 @media only screen and (min-width: 641px) and (max-width: 1024px) {
   html {
@@ -88,7 +94,7 @@
   html {
     font-size: 1.1rem;
   }
-} 
+}
 
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
   html {
@@ -100,14 +106,13 @@
   html {
     font-size: 1.3rem;
   }
-} 
+}
 
 @media only screen and (min-width: 2501px) {
-    html {
-      font-size: 1.7rem;
-    }
-  } 
-
+  html {
+    font-size: 1.7rem;
+  }
+}
 
 /*------------------------------------------
                     Foundation Media Queries 

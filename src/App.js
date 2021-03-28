@@ -13,6 +13,7 @@ function App() {
       <Helmet />
       <Router>
         <Nav />
+        <Home />
         <Switch>
           <Route path="/Kanabinoidy" component={Kanabinoidy} />
           <Route path="/About" component={Vyuziti} />
