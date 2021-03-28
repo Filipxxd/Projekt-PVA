@@ -23,7 +23,7 @@ export default function Nav() {
             onClick={isActive ? showNav : null}
           />
         </Link>
-        <div className={`underNav ${isActive ? "navToggle" : null}`}>
+        <div className={`underNav ${isActive ? "navToggleOn" : "navToggleOff"}`}>
           <NavLink to="/Kanabinoidy" onClick={showNav}>
             KANABINOIDY
           </NavLink>

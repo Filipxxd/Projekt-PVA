@@ -10,18 +10,16 @@
   z-index: 1;
   width: 100%;
 }
-.navbar {
+.navbar, .underNav {
   display: flex;
   align-items: center;
 }
 .underNav {
   opacity: 0;
   visibility: hidden;
-  display: none;
-  align-items: center;
   z-index: inherit;
   font-size: 1.45rem;
-  transition: visibility 0.5s ease, opacity 0.5s ease;
+  transition: visibility 0.5s ease, opacity 0.5s ease, margin .5s ease, background .5s ease;
 }
 .underNav a {
   position: relative;
@@ -72,9 +70,6 @@
     border-radius: 10px;
     background-color: var(--black);
     transition: transform 0.3s ease-in-out, background 0.3s ease-in;
-  }
-  .click:hover * {
-    width: 0.8rem;
   }
   .ToClose,
   .ToOpen {
@@ -132,7 +127,6 @@
 
   /* FullSize otevreny "pod" navigator */
   .underNav {
-    display: flex;
     position: fixed;
     top: 0;
     flex-direction: column;
@@ -141,14 +135,18 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    margin-left: -100%;
   }
   /* otevreni "pod" navigatoru */
-  .navToggle {
+  .navToggleOn {
     background-color: inherit;
     margin-left: 0;
     opacity: 1;
     visibility: visible;
+  }
+  .navToggleOff{
+    margin-left: -100%;
+    opacity: 0;
+    visibility: hidden;
   }
   .underNav a {
     margin: 0.5rem;
@@ -163,7 +161,6 @@
   .underNav {
     opacity: 1;
     visibility: visible;
-    display: flex;
   }
   /* nav link anim active/hover */
 

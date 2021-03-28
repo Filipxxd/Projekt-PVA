@@ -11,7 +11,7 @@
   font-size: 3.5rem;
 }
 .box header {
-  width: 100vw;
+  width: 100%;
   background-color: #efefed;
 }
 .box h2 {
@@ -44,6 +44,7 @@
   }
   .box h1{
     font-size: 2.5rem ;
+    padding-left: 1rem;
   }
   .box p {
     width: 95%;
