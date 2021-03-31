@@ -1,0 +1,55 @@
+/* SHOP ITEM NAKRES */
+.product-wrap {
+  background-color: var(--white);
+  width: 22rem;
+  display: block;
+  margin: 1rem auto;
+}
+.productIMG {
+  border: 0.2rem solid var(--black);
+}
+.productIMG img {
+  width: 100%;
+  max-width: 10rem;
+  margin: auto;
+  display: block;
+}
+/* nazev produktu */
+.product-wrap h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0 0 0.5rem;
+  color: var(--black);
+}
+.desc {
+  margin: 1rem;
+  text-align: justify;
+}
+.productPageLink {
+}
+.fifty {
+  display: flex;
+  justify-content: space-around;
+}
+.available {
+  color: #4ec935;
+}
+.notavailable {
+  color: #ff0000;
+}
+.price {
+  font-weight: bold;
+}
+/* přidej do košíku btn */
+.addToCart {
+  margin-top: 0.5rem;
+  width: 100%;
+  line-height: 4;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.5s ease-in, color 0.5s ease;
+  z-index: 1;
+}
+.addToCart:hover {
+  background-color: var(--black);
+  color: var(--white);
+}

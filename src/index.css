@@ -1,13 +1,14 @@
-:root{
+:root {
   --black: #313639;
   --clickedBlack: #4d4d4d;
   --white: #efefed;
   --purple: #551a8b;
-  }
+  --lightGray: #a0a1a1;
+  --ultraLightGray: #c9c9c9;
+}
 * {
   margin: 0;
   padding: 0;
-
 }
 html {
   scroll-behavior: smooth;
@@ -32,6 +33,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--black);
 }
 ul,
 li {

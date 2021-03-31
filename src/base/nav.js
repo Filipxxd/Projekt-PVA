@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { FaShoppingBag } from "react-icons/fa";
 import logo from "../img/Logo.svg";
 import "./nav.css";
 
@@ -8,11 +9,11 @@ export default function Nav() {
   const showNav = () => {
     setActive(!isActive);
   };
-  window.addEventListener("resize", ()=>{
-    setActive(false)
-  })
+  window.addEventListener("resize", () => {
+    setActive(false);
+  });
   return (
-    <div id="place">
+    <div className={"navPlace"}>
       <nav className={"navbar"}>
         <Link to="/Home" className={"Logowrap"}>
           <img
@@ -23,7 +24,9 @@ export default function Nav() {
             onClick={isActive ? showNav : null}
           />
         </Link>
-        <div className={`underNav ${isActive ? "navToggleOn" : "navToggleOff"}`}>
+        <div
+          className={`underNav ${isActive ? "navToggleOn" : "navToggleOff"}`}
+        >
           <NavLink to="/Kanabinoidy" onClick={showNav}>
             KANABINOIDY
           </NavLink>
@@ -36,6 +39,7 @@ export default function Nav() {
           <NavLink to="/About" onClick={showNav}>
             VYUŽITÍ
           </NavLink>
+          <FaShoppingBag className="shoppingCart" />
         </div>
         <div className={"NavToggleWrapper"} onClick={showNav}>
           <span className={"click ToClose"}>

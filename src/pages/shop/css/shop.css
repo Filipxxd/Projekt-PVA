@@ -1,0 +1,26 @@
+/* INPUT NA POČET KUSŮ */
+.numOfProducts {
+  width: 2rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: center;
+}
+textarea:focus,
+input:focus {
+  /* outline: 1px solid #ffc000; */
+  outline: none;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

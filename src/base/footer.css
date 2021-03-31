@@ -5,7 +5,7 @@
 .before {
   width: 100%;
   display: flex;
-  padding: .7rem 0 2rem 0;
+  padding: 0.7rem 0 2rem 0;
 }
 .before * {
   color: #313639;
@@ -25,7 +25,7 @@
 @media screen and (max-width: 769px) {
   .before {
     flex-direction: column;
-    padding: 1.7rem  0;
+    padding: 1.7rem 0;
   }
   .before * {
     display: inline-flex;

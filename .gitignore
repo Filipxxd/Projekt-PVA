@@ -1,3 +1,5 @@
+# visual code extensions
+.vscode
 # dependencies
 /node_modules
 /.pnp

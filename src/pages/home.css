@@ -1,29 +1,32 @@
-.homeWrap {
+.homeWrapper {
   background: url(../img/background.jpg) no-repeat center;
   background-size: cover;
-  height: 90vh;
+  min-height: 90vh;
   width: 100vw;
-}
-.centerPage,
-.homeWrap {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.homeMain {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
-.centerPage {
-  color: #313639;
-  font-size: 1.5rem;
+.small {
+  letter-spacing: -1.2px;
+  color: var(--clickedBlack);
 }
-.line {
-  width: 15rem;
-  height: 0.2rem;
-  border-radius: 8px;
-  margin: 0.5rem;
-  background-color: #313639;
+.large {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: var(--black);
 }
+
+/* GITHUB BTN */
 .ghub {
   display: flex;
   text-align: center;
@@ -50,4 +53,9 @@
   background-color: #313639;
   color: #efefed;
   transform: scale(1.04);
+}
+
+/* bottom */
+.adShop {
+  text-align: center;
 }

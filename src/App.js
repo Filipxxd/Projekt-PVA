@@ -5,7 +5,7 @@ import Home from "./pages/home.js";
 import Kanabinoidy from "./pages/kanabino.js";
 import Vyuziti from "./pages/vyuziti.js";
 import Produkty from "./pages/produkty.js";
-import Shop from "./pages/shop.js";
+import Shop from "./pages/shop/Shop.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
