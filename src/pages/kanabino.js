@@ -1,59 +1,55 @@
-import React from "react";
-import "./vyuziti.js";
+import PageHeader from "../base/PageHeader.js";
+import { Helmet } from "react-helmet";
+import "./kanabino.css";
 
-export default function Header() {
+export default function Kanabino() {
   return (
-    <div className="box">
-      <header>
-        <h1>Kanabinoidy</h1>
-      </header>
-      <main>
-        <section>
-          <h2>THC</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
-            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
-            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
-            magnam? Ipsam, sit dicta!
-          </p>
-        </section>
-        <section>
-          <h2>THCa </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
-            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
-            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
-            magnam? Ipsam, sit dicta!
-          </p>
-        </section>
-        <section>
-          <h2>CBD</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
-            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
-            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
-            magnam? Ipsam, sit dicta!
-          </p>
-        </section>
-        <section>
-          <h2>CBA</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
-            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
-            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
-            magnam? Ipsam, sit dicta!
-          </p>
-        </section>
-        <section>
-          <h2>CBN</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde illo
-            vitae reiciendis aliquam voluptas quis, libero deserunt, laudantium
-            nulla ratione reprehenderit alias, numquam facilis at! Blanditiis,
-            magnam? Ipsam, sit dicta!
-          </p>
-        </section>
-      </main>
-    </div>
+    <>
+      <Helmet>
+        <title>KANABINOIDY</title>
+      </Helmet>
+      <PageHeader pageName="KANABINOIDY" />
+      <div className="kanabino">
+        <p>
+          Skupina látek, jež má omamný účínek na receptory v mozku. Patří sem
+          "drogy" připravované z rostliny konopí.
+        </p>
+        <table title="Tabulka kanabinoidů">
+          <tr>
+            <th>Kannabinoid</th>
+            <th>Vzorec</th>
+            <th>Legální?</th>
+          </tr>
+          <tr>
+            <td>THC</td>
+            <td>
+              C<sub>21</sub>H<sub>30</sub>O<sub>2</sub>
+            </td>
+            <td>NE</td>
+          </tr>
+          <tr>
+            <td>THCa</td>
+            <td>
+              C<sub>22</sub>H<sub>30</sub>O<sub>4</sub>
+            </td>
+            <td>NE</td>
+          </tr>
+          <tr>
+            <td>CBD</td>
+            <td>
+              C<sub>21</sub>H<sub>30</sub>O<sub>2</sub>
+            </td>
+            <td>ANO</td>
+          </tr>
+          <tr>
+            <td>CBN</td>
+            <td>
+              C<sub>21</sub>H<sub>26</sub>O<sub>2</sub>
+            </td>
+            <td>ANO</td>
+          </tr>
+        </table>
+      </div>
+    </>
   );
 }

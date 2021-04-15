@@ -1,0 +1,19 @@
+.categories {
+  margin: 1rem;
+}
+.categoryLine {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.product-wrap {
+  transition: transform 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .product-wrap:hover {
+    transform: scale(1.02);
+  }
+}

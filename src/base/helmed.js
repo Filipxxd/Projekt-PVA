@@ -1,4 +1,3 @@
-import React from "react";
 import { Helmet } from "react-helmet";
 
 function helmed() {
@@ -87,7 +86,7 @@ function helmed() {
         name="msapplication-square310x310logo"
         content="mstile-310x310.png"
       />
-      <title>Projekt konopí</title>
+      <title>HOME</title>
       <meta name="title" content="Projekt konopí" />
       <meta property="og:title" content="Projekt konopí" />
       <meta property="twitter:title" content="Projekt konopí" />

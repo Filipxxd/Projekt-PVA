@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -27,13 +26,13 @@ export default function footer() {
         </div>
       </div>
       <div className="after">
-        <a href="/" title="Twitter">
+        <a href="https://www.twitter.com/" title="Twitter">
           <FaTwitter />
         </a>
-        <a href="/" title="Facebook">
+        <a href="https://www.facebook.com/" title="Facebook">
           <FaFacebook />
         </a>
-        <a href="/" title="Instagram">
+        <a href="https://www.instagram.com/" title="Instagram">
           <FaInstagram />
         </a>
       </div>

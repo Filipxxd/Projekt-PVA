@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
 :root {
   --black: #313639;
   --clickedBlack: #4d4d4d;
@@ -10,19 +11,21 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
   overflow-y: overlay;
   overflow-x: hidden;
 }
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Work Sans", sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color: #fdfbfb;
 }
 ::-webkit-scrollbar {
   width: 4px;
@@ -34,6 +37,10 @@ body {
 a {
   text-decoration: none;
   color: var(--black);
+  transition: color 0.1s ease;
+}
+a:active {
+  color: var(--lightGray);
 }
 ul,
 li {

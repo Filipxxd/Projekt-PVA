@@ -1,0 +1,49 @@
+{
+    "VÝPRODEJ": [
+        {
+            "id": 0,
+            "img": "/img/sutry.svg",
+            "label": "Pořádný šutry",
+            "description": "neexistují tvrdší šutry",
+            "avaibility": true,
+            "price": 1234,
+            "sales": false
+        },
+        {
+            "id": 1,
+            "img": "/img/palky.svg",
+            "label": "Velký pálky",
+            "description": "prvotřídní pálky z toho nejlepšího materiálu",
+            "avaibility": 5,
+            "price": 600,
+            "sales": true
+        },
+        {
+            "id": 2,
+            "img": "/img/kybl.svg",
+            "label": "Kýbl",
+            "description": "ekonomicky dostupná možnost k zadržení tekutin",
+            "avaibility": false,
+            "price": 6.66,
+            "sales": false
+        },
+        {
+            "id": 3,
+            "img": "/img/sklo.svg",
+            "label": "Sklo",
+            "description": "''se hodí''",
+            "avaibility": 2,
+            "price": 10,
+            "sales": false
+        },
+        {
+            "id": 4,
+            "img": "/img/voda.svg",
+            "label": "Voda",
+            "description": "neperlivá osvěžující voda, proč ne?",
+            "avaibility": true,
+            "price": 420,
+            "sales": true
+        }
+    ]
+}

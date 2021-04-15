@@ -1,0 +1,39 @@
+.aboutWrapper {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  min-height: 20rem;
+}
+.aboutWrapper > div {
+  margin-top: 3rem;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutIcon {
+  margin-top: 1rem;
+  color: var(--black);
+}
+.aboutWrapper p {
+  width: 80%;
+  margin: 1rem;
+}
+.aboutWrapper a {
+  font-weight: bold;
+}
+.aboutIcon {
+  font-size: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .aboutWrapper {
+    flex-direction: column;
+    margin: 2rem 0;
+    font-size: 1.25rem;
+  }
+  .aboutWrapper > div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

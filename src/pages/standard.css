@@ -1,0 +1,39 @@
+.box {
+  width: 100vw;
+}
+.box * {
+  margin: auto;
+}
+.box h2 {
+  margin: 1rem 0;
+}
+.box main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box section {
+  padding: 1rem;
+}
+.box p {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 781px) {
+  .box main {
+    width: 90%;
+  }
+  .box section {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .box main {
+    flex-direction: column;
+  }
+  .box p {
+    width: 95%;
+  }
+  .box section:last-of-type {
+    padding-bottom: 5rem;
+  }
+}

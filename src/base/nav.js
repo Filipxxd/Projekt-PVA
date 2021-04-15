@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { FaShoppingBag } from "react-icons/fa";
+// import { FaShoppingBag } from "react-icons/fa";
 import logo from "../img/Logo.svg";
 import "./nav.css";
 
@@ -30,16 +30,16 @@ export default function Nav() {
           <NavLink to="/Kanabinoidy" onClick={showNav}>
             KANABINOIDY
           </NavLink>
-          <NavLink to="/Produkty" onClick={showNav}>
-            PRODUKTY
+          <NavLink to="/Využití" onClick={showNav}>
+            VYUŽITÍ
           </NavLink>
           <NavLink to="/Shop" onClick={showNav}>
             FAKESHOP
           </NavLink>
           <NavLink to="/About" onClick={showNav}>
-            VYUŽITÍ
+            ABOUT
           </NavLink>
-          <FaShoppingBag className="shoppingCart" />
+          {/* <FaShoppingBag className="shoppingCart" /> */}
         </div>
         <div className={"NavToggleWrapper"} onClick={showNav}>
           <span className={"click ToClose"}>
