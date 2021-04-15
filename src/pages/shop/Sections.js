@@ -10,9 +10,12 @@ export default function Sections(props) {
     let categoryName = categoriesNames[i];
     let category = products[categoryName];
     Items = [];
-    category.forEach(item => {
-      Items.push(<ShopItem product={item} key={item.id} />);
-    });
+
+    for (var j = 0; j < category.length; j++) {
+      Items.push(<ShopItem product={category[j]} key={j} />);
+    }
+
+    category.forEach(item => {});
     Row.push(
       <div className="categoryLine" key={i}>
         {Items}

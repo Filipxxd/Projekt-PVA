@@ -4,7 +4,6 @@ import Section from "./Sections.js";
 import PageHeader from "../../base/PageHeader.js";
 import { Helmet } from "react-helmet";
 
-const slideImages = ["img/flowers.jpg", "img/oils.jpg", "img/seeds.jpg"];
 export default function ShopHome() {
   const [productsObject, setproductsObject] = useState([]);
 
