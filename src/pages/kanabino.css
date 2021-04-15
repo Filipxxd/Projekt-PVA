@@ -1,5 +1,5 @@
 .kanabino {
-  margin: 1.5rem;
+  margin: 1.5rem 0;
 }
 .kanabino p {
   display: flex;
@@ -13,7 +13,7 @@ table {
   margin: 2rem auto;
   border: 0.1rem solid var(--black);
   border-radius: 1px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 th {
   padding: 0.3rem;
