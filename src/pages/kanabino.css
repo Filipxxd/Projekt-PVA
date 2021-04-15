@@ -4,6 +4,8 @@
 .kanabino p {
   display: flex;
   flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
   font-size: 1.2rem;
 }
 .kanabino * {
