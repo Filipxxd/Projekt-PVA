@@ -26,11 +26,24 @@ export default function aboutPage() {
         <div>
           <FaReact className="aboutIcon" />
           <p>
-            Web je "postaven" v<a href="https://reactjs.org/"> Reactu</a> ,
-            ikony importovány z
-            <a href="https://fontawesome.com/"> Font Awesome</a>, obrázky
-            staženy z<a href="https://pixabay.com/"> Pixabay</a> a to něco málo
-            informací je z <a href="https://legalizace.cz/"> Legalizace.cz</a>
+            Web je "postaven" v
+            <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
+              {" "}
+              Reactu
+            </a>{" "}
+            , ikony importovány z
+            <a href="https://fontawesome.com/" rel="noreferrer" target="_blank">
+              {" "}
+              Font Awesome
+            </a>
+            , obrázky staženy z
+            <a href="https://pixabay.com/" rel="noreferrer" target="_blank">
+              Pixabay
+            </a>{" "}
+            a to něco málo informací je z{" "}
+            <a href="https://legalizace.cz/" rel="noreferrer" target="_blank">
+              Legalizace.cz
+            </a>
           </p>
         </div>
       </div>

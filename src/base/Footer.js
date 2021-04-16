@@ -26,13 +26,28 @@ export default function footer() {
         </div>
       </div>
       <div className="after">
-        <a href="https://www.twitter.com/" title="Twitter" target="_blank">
+        <a
+          href="https://www.twitter.com/"
+          title="Twitter"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaTwitter />
         </a>
-        <a href="https://www.facebook.com/" title="Facebook" target="_blank">
+        <a
+          href="https://www.facebook.com/"
+          title="Facebook"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaFacebook />
         </a>
-        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+        <a
+          href="https://www.instagram.com/"
+          title="Instagram"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaInstagram />
         </a>
       </div>
