@@ -26,13 +26,13 @@ export default function footer() {
         </div>
       </div>
       <div className="after">
-        <a href="https://www.twitter.com/" title="Twitter">
+        <a href="https://www.twitter.com/" title="Twitter" target="_blank">
           <FaTwitter />
         </a>
-        <a href="https://www.facebook.com/" title="Facebook">
+        <a href="https://www.facebook.com/" title="Facebook" target="_blank">
           <FaFacebook />
         </a>
-        <a href="https://www.instagram.com/" title="Instagram">
+        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
           <FaInstagram />
         </a>
       </div>
