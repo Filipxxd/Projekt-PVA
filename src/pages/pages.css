@@ -1,0 +1,178 @@
+/* vyuziti */
+.box {
+  width: 100vw;
+}
+.box * {
+  margin: auto;
+}
+.box h2 {
+  margin: 1rem 0;
+}
+.box main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box section {
+  padding: 1rem;
+}
+.box p {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 781px) {
+  .box main {
+    width: 90%;
+  }
+  .box section {
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .box main {
+    flex-direction: column;
+  }
+  .box p {
+    width: 95%;
+  }
+  .box section:last-of-type {
+    padding-bottom: 5rem;
+  }
+}
+
+/* kanabinoidy */
+.kanabino {
+  margin: 1.5rem 0;
+}
+.kanabino p {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.kanabino * {
+  text-align: center;
+}
+table {
+  margin: 2rem auto;
+  border: 0.1rem solid var(--black);
+  border-radius: 1px;
+  font-size: 1.2rem;
+}
+th {
+  padding: 0.3rem;
+}
+td {
+  padding: 0.2rem;
+}
+tr:nth-of-type(even) {
+  background-color: var(--lightGray);
+}
+@media screen and (min-width: 768px) {
+  .kanabino p {
+    margin: 1rem auto;
+  }
+  table {
+    font-size: 1.7rem;
+  }
+}
+
+/* home page */
+.homeWrapper {
+  background: url(../img/background.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.homeMain {
+  margin-top: -8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.small {
+  letter-spacing: -1.2px;
+  color: var(--clickedBlack);
+}
+.large {
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+/* GITHUB BTN */
+.ghub {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 8px;
+  letter-spacing: 0.8px;
+  transition: background-color 0.7s ease-in-out, transform 0.6s ease-in-out,
+    color 0.7s ease-in-out;
+}
+.ghub {
+  color: #313639;
+  background-color: transparent;
+}
+.ghub * {
+  margin: 0.7rem 1rem;
+}
+.ghub svg {
+  font-size: 2.5rem;
+  margin-right: -0.5rem;
+}
+.ghub:hover {
+  background-color: #313639;
+  color: #efefed;
+  transform: scale(1.04);
+}
+
+/* about page */
+.aboutWrapper {
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  min-height: 20rem;
+}
+.aboutWrapper > div {
+  margin-top: 3rem;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutIcon {
+  margin-top: 1rem;
+  color: var(--black);
+}
+.aboutWrapper p {
+  width: 80%;
+  margin: 1rem;
+}
+.aboutWrapper a {
+  font-weight: bold;
+}
+.aboutIcon {
+  font-size: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .aboutWrapper {
+    flex-direction: column;
+    margin: 2rem 0;
+    font-size: 1.25rem;
+  }
+  .aboutWrapper > div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

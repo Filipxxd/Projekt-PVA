@@ -19,7 +19,7 @@ export default function Nav() {
           <img
             src={logo}
             alt="Logo"
-            title="Konopí"
+            title="Home"
             className={"Logo"}
             onClick={isActive ? showNav : null}
           />

@@ -2,6 +2,7 @@
 :root {
   --black: #313639;
   --clickedBlack: #4d4d4d;
+  --clickedText: #6e6e6e;
   --white: #efefed;
   --purple: #551a8b;
   --lightGray: #a0a1a1;
@@ -40,7 +41,7 @@ a {
   transition: color 0.1s ease;
 }
 a:active {
-  color: var(--lightGray);
+  color: var(--clickedText);
 }
 ul,
 li {

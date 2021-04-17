@@ -1,9 +1,8 @@
-import "./aboutPage.css";
 import PageHeader from "../base/PageHeader.js";
 import { FaPills, FaShoppingBasket, FaReact } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
-export default function aboutPage() {
+export default function AboutPage() {
   return (
     <>
       <Helmet>
@@ -30,7 +29,7 @@ export default function aboutPage() {
             <a href="https://reactjs.org/" rel="noreferrer" target="_blank">
               {" "}
               Reactu
-            </a>{" "}
+            </a>
             , ikony importovány z
             <a href="https://fontawesome.com/" rel="noreferrer" target="_blank">
               {" "}
@@ -38,10 +37,12 @@ export default function aboutPage() {
             </a>
             , obrázky staženy z
             <a href="https://pixabay.com/" rel="noreferrer" target="_blank">
-              Pixabay
-            </a>{" "}
-            a to něco málo informací je z{" "}
+              {" "}
+              Pixabay{" "}
+            </a>
+            a to něco málo informací je z
             <a href="https://legalizace.cz/" rel="noreferrer" target="_blank">
+              {" "}
               Legalizace.cz
             </a>
           </p>

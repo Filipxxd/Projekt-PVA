@@ -6,7 +6,10 @@ import Kanabinoidy from "./pages/Kanabino.js";
 import Vyuziti from "./pages/Vyuziti.js";
 import About from "./pages/AboutPage.js";
 import Shop from "./pages/shop/ShopHome.js";
+
 import ClickJump from "./base/ClickToTop.js";
+import ContactUs from "./base/ContactUs.js";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -20,12 +23,13 @@ function App() {
           <Route path="/About" component={About} />
           <Route path="/Využití" component={Vyuziti} />
           <Route path="/Shop" exact component={Shop} />
-          <Route path="/Shop/" component={Home} />
+          {/* <Route path="/Shop/" component={Blank} /> */}
           <Route path="/" component={Home} />
         </Switch>
       </Router>
       <Footer />
       <ClickJump />
+      <ContactUs />
     </>
   );
 }

@@ -1,7 +1,6 @@
-import "./home.css";
 import { FaGithub } from "react-icons/fa";
 
-export default function home() {
+export default function Home() {
   return (
     <div className={"homeWrapper"}>
       <div className={"homeMain"}>

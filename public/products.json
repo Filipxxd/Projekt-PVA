@@ -44,6 +44,15 @@
             "avaibility": true,
             "price": 420,
             "sales": true
+        },
+        {
+            "id": 5,
+            "img": null,
+            "label": "Voda",
+            "description": "neperlivá osvěžující voda, proč ne?",
+            "avaibility": true,
+            "price": 420,
+            "sales": true
         }
     ]
 }

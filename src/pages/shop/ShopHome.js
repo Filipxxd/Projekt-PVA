@@ -25,13 +25,13 @@ export default function ShopHome() {
     getProductsObject();
   }, []);
 
-  var temporary =
+  var jsonOutput =
     productsObject.length === 0 ? (
       <div
         style={{
           fontSize: "2rem",
           textAlign: "center",
-          paddingTop: "2.5rem"
+          paddingTop: "2rem"
         }}
       >
         loading
@@ -44,8 +44,10 @@ export default function ShopHome() {
       <Helmet>
         <title>FAKESHOP</title>
       </Helmet>
-      <PageHeader pageName="FAKESHOP" />
-      <div className="categories">{temporary}</div>
+      <PageHeader pageName="FAKESHOP">
+        <div>xd</div>
+      </PageHeader>
+      <div className="categories">{jsonOutput}</div>
     </>
   );
 }

@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import App from "./App";
+
 import "./index.css";
 import "./media.css";
-import "./pages/standard.css";
+import "./pages/pages.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));

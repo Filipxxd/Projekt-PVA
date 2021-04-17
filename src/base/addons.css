@@ -1,21 +1,47 @@
-.ScrollBtn {
+/*  */
+.ScrollBtn:before,
+.contactBTN:before {
+  content: "×";
+  position: fixed;
+  bottom: 140%;
+  right: 10%;
+  display: inline;
+  color: var(--black);
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.ScrollBtn,
+.contactBTN {
   position: fixed;
   font-size: 2.5rem;
-  bottom: 1rem;
-  right: 1rem;
-  transition: transform 0.2s ease;
+  transition: transform 0.4s ease;
   cursor: pointer;
   color: var(--black);
 }
-.ScrollBtn:hover {
-  transform: scale(1.05);
+.ScrollBtn:hover,
+.contactBTN:hover {
+  transform: scale(1.1);
 }
-.ScrollBtn:active {
-  opacity: 0.85;
+.ScrollBtn:active,
+.contactBTN:active {
+  color: var(--clickedBlack);
 }
 .hidden {
   visibility: hidden;
 }
 .shown {
   visibility: visible;
+}
+
+/* scroll to top */
+.ScrollBtn {
+  right: 1rem;
+  bottom: 1rem;
+}
+
+/* contact us */
+.contactBTN {
+  left: 1rem;
+  bottom: 50%;
+  transform: rotate(90deg);
 }

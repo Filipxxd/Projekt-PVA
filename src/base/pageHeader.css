@@ -1,9 +1,7 @@
 h1 {
-  text-align: left;
-  font-family: "Work Sans", sans-serif;
-  color: #313639;
-  padding: 4.5rem 0.2rem;
-  font-size: 2.8rem;
+  color: var(--black);
+  padding: 4.5rem 0;
+  font-size: 4.2rem;
   text-align: center;
   letter-spacing: 3px;
 }
@@ -13,7 +11,7 @@ header {
 }
 @media screen and (min-width: 781px) {
   h1 {
-    padding: 6rem 2rem;
+    padding: 6rem 0;
     font-size: 5rem;
   }
 }
