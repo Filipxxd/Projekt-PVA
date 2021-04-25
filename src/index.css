@@ -50,3 +50,10 @@ li {
 .none {
   display: none;
 }
+textarea:focus,
+input:focus {
+  outline: none;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}

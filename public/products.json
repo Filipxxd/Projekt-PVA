@@ -1,7 +1,6 @@
 {
     "VÝPRODEJ": [
         {
-            "id": 0,
             "img": "/img/sutry.svg",
             "label": "Pořádný šutry",
             "description": "neexistují tvrdší šutry",
@@ -10,7 +9,6 @@
             "sales": false
         },
         {
-            "id": 1,
             "img": "/img/palky.svg",
             "label": "Velký pálky",
             "description": "prvotřídní pálky z toho nejlepšího materiálu",
@@ -19,7 +17,6 @@
             "sales": true
         },
         {
-            "id": 2,
             "img": "/img/kybl.svg",
             "label": "Kýbl",
             "description": "ekonomicky dostupná možnost k zadržení tekutin",
@@ -28,31 +25,96 @@
             "sales": false
         },
         {
-            "id": 3,
             "img": "/img/sklo.svg",
             "label": "Sklo",
-            "description": "''se hodí''",
+            "description": "není ostré",
             "avaibility": 2,
             "price": 10,
             "sales": false
         },
         {
-            "id": 4,
             "img": "/img/voda.svg",
             "label": "Voda",
-            "description": "neperlivá osvěžující voda, proč ne?",
+            "description": "neperlivá osvěžující voda",
             "avaibility": true,
             "price": 420,
+            "sales": true
+        }
+    ],
+    "KAMENY": [
+        {
+            "img": "/img/bilyKamen.svg",
+            "label": "Bílý kámen",
+            "description": "vysoký světlý kus neznáme horniny",
+            "avaibility": 1,
+            "price": 420,
+            "sales": false
+        },
+        {
+            "img": "/img/snihKamen.svg",
+            "label": "Zasněžený kámen",
+            "description": "kámen s vodou",
+            "avaibility": true,
+            "price": 111,
             "sales": true
         },
         {
-            "id": 5,
-            "img": null,
-            "label": "Voda",
-            "description": "neperlivá osvěžující voda, proč ne?",
-            "avaibility": true,
-            "price": 420,
+            "img": "/img/divnyKamen.svg",
+            "label": "Divný kámen",
+            "description": "nevim lol",
+            "avaibility": false,
+            "price": 249,
+            "sales": false
+        },
+        {
+            "img": "/img/tyrkysKamen.svg",
+            "label": "Tyrkysová kámen",
+            "description": ".",
+            "avaibility": 2,
+            "price": 200,
             "sales": true
+        },
+        {
+            "img": "/img/dvaKameny.svg",
+            "label": "Dva kameny",
+            "description": "jeden menší než druhej",
+            "avaibility": false,
+            "price": 677,
+            "sales": false
+        }
+    ],
+    "BIVAKY": [
+        {
+            "img": "/img/muchomurkaBivak.svg",
+            "label": "Muchomůrka 1+1KK",
+            "description": "lorem",
+            "avaibility": true,
+            "price": 789,
+            "sales": true
+        },
+        {
+            "img": "/img/listBivak.svg",
+            "label": "Barák se střešní ozdobou",
+            "description": ".",
+            "avaibility": false,
+            "price": 100,
+            "sales": false
+        },
+        {
+            "img": "/img/3dBivak.svg",
+            "label": "3D bivak",
+            "description": "na obrazku styl",
+            "avaibility": 1,
+            "price": 666,
+            "sales": false
+        },
+        {
+            "img": "/img/divnyBivak.svg",
+            "label": "Divný barak",
+            "description": "?",
+            "avaibility": true,
+            "price": 1,
+            "sales": false
         }
     ]
 }

@@ -1,8 +1,15 @@
+// import { useState } from "react";
 import ImageForProduct from "./ImageForProduct.js";
-import "./css/shopItem.css";
 
-export default function shopItem(props) {
+export default function ShopItem(props) {
   const product = props.product;
+
+  // function addToCart(item) {
+  //   // let old = localStorage.getItem("cartItems");
+  //   // if (old === null) old = "";
+  //   // localStorage.setItem("cartItems", old + item);
+  //   console.log(localStorage.getItem("cartItems"));
+  // }
 
   const AvaibilityInfo = () => {
     const avaibilityStatus = product.avaibility;
@@ -17,26 +24,23 @@ export default function shopItem(props) {
 
   return (
     <div className={"product-wrap"}>
-      <a
-        className={"productImgLink"}
-        href={
-          "/" +
-          product.label
-            .normalize("NFD") // Kapitalky
-            .replace(/[\u0300-\u036f]/g, "") // replace diakritiky
-            .split(" ") // misto mezer
+      {/*    product.label
+           .normalize("NFD") // Kapitalky
+             .replace(/[\u0300-\u036f]/g, "") // replace diakritiky
+           .split(" ") // misto mezer
             .join("-") // pomlcky
-        }
-      >
+          */}
+      <div className="productImgWrapper">
         <ImageForProduct url={product.img} label={product.label} />
-      </a>
+      </div>
+
       <h3>{product.label}</h3>
 
       <p className={"desc"}>
         {
-          /* max 50 znaků v description*/
+          /* max 50 znaků description produktu*/
           product.description.substring.length > 50
-            ? +product.description.substring(0, 50) + "..."
+            ? product.description.substring(0, 50) + "..."
             : product.description
         }
       </p>
@@ -44,10 +48,15 @@ export default function shopItem(props) {
       <span className={"fifty"}>
         <AvaibilityInfo />
         <p className={"price"}>
-          <span>{product.sales ? product.price * 0.9 : product.price}</span> CZK
+          <span>
+            {product.sales ? product.price * (0.9).toFixed() : product.price}
+          </span>{" "}
+          CZK
         </p>
       </span>
-      <h5 className={"addToCart"}>PŘIDAT DO KOŠÍKU</h5>
+      <h5 className={"addToCart"} onClick={() => props.addItem(product)}>
+        PŘIDAT DO KOŠÍKU
+      </h5>
     </div>
   );
 }

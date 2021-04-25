@@ -30,10 +30,10 @@ export default function Nav() {
           <NavLink to="/Kanabinoidy" onClick={showNav}>
             KANABINOIDY
           </NavLink>
-          <NavLink to="/Využití" onClick={showNav}>
+          <NavLink to="/Vyuziti" onClick={showNav}>
             VYUŽITÍ
           </NavLink>
-          <NavLink to="/Shop" onClick={showNav}>
+          <NavLink to="/Shop/" onClick={showNav}>
             FAKESHOP
           </NavLink>
           <NavLink to="/About" onClick={showNav}>

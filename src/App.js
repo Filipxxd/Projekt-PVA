@@ -8,7 +8,7 @@ import About from "./pages/AboutPage.js";
 import Shop from "./pages/shop/ShopHome.js";
 
 import ClickJump from "./base/ClickToTop.js";
-import ContactUs from "./base/ContactUs.js";
+// import ContactUs from "./base/ContactUs.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -21,15 +21,16 @@ function App() {
         <Switch>
           <Route path="/Kanabinoidy" component={Kanabinoidy} />
           <Route path="/About" component={About} />
-          <Route path="/Využití" component={Vyuziti} />
-          <Route path="/Shop" exact component={Shop} />
-          {/* <Route path="/Shop/" component={Blank} /> */}
-          <Route path="/" component={Home} />
+          <Route path="/Vyuziti" component={Vyuziti} />
+          {/* SHOP */}
+          <Route path="/Shop/" component={Shop} />
+          <Route path={"/Home"} exact component={Home} />
+          <Route path={"/"} exact component={Home} />
         </Switch>
       </Router>
       <Footer />
       <ClickJump />
-      <ContactUs />
+      {/* <ContactUs /> */}
     </>
   );
 }
